@@ -73,8 +73,8 @@ p{margin:0}
 .mnav a:not(.btn){text-decoration:none;font-weight:800;font-size:20px;padding:13px 14px;border-radius:14px;border:2px solid transparent}
 .mnav a:not(.btn):hover,.mnav a[aria-current="page"],.mnav a.is-active{border-color:var(--ink);background:var(--yellow)}
 .mnav .btn{margin-top:10px}
-@media (min-width:1081px){.mnav{display:none!important}}
-@media (max-width:1080px){.nav{display:none}.hdr-cta{margin-left:auto}.burger{display:flex;margin-left:12px}}
+@media (min-width:1181px){.mnav{display:none!important}}
+@media (max-width:1180px){.nav{display:none}.hdr-cta{margin-left:auto}.burger{display:flex;margin-left:12px}}
 @media (max-width:520px){.hdr-cta{display:none}.burger{margin-left:auto}}
 
 /* hero */
@@ -122,7 +122,7 @@ p{margin:0}
 
 /* services */
 .svc{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:20px}
-@media (max-width:1240px){.svc{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
 @media (max-width:560px){.svc{grid-template-columns:minmax(0,1fr)}}
 .card{border:var(--b);border-radius:22px;box-shadow:var(--sh);padding:24px;display:flex;flex-direction:column;gap:14px;transition:transform .15s,box-shadow .15s}
 .card:hover{transform:translate(-3px,-3px);box-shadow:9px 9px 0 var(--ink)}
@@ -406,3 +406,17 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;
 .card .pr .pv b{font-size:30px}
 .card .pr .more-link{order:2}
 .card .pr .more-link::after{content:" →"}
+
+/* ---------- ads service ---------- */
+.b-orange{background:var(--orange)}
+.page-hero.b-orange{color:var(--ink)}
+.page-hero.b-orange .sub{color:var(--ink)}
+.c5{background:var(--orange)}
+.feats-2{grid-template-columns:repeat(2,minmax(0,1fr))}
+@media (max-width:700px){.feats-2{grid-template-columns:minmax(0,1fr)}}
+/* five service cards: 3 on top, 2 wider below */
+.svc{grid-template-columns:repeat(6,minmax(0,1fr))}
+.svc > .card{grid-column:span 2}
+.svc > .card:nth-child(n+4){grid-column:span 3}
+@media (max-width:1060px){.svc{grid-template-columns:repeat(2,minmax(0,1fr))}.svc > .card,.svc > .card:nth-child(n+4){grid-column:span 1}.svc > .card:last-child{grid-column:1 / -1}}
+@media (max-width:560px){.svc{grid-template-columns:minmax(0,1fr)}.svc > .card:last-child{grid-column:auto}}

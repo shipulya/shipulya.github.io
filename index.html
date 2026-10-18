@@ -14,7 +14,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@600;800;900&family=Onest:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap">
-<link rel="stylesheet" href="/css/site.css?v=5">
+<link rel="stylesheet" href="/css/site.css?v=6">
 </head>
 <body>
 <header class="hdr">
@@ -24,6 +24,7 @@
       <a href="/sites/">Сайты</a>
       <a href="/bots/">Боты</a>
       <a href="/automation/">Автоматизация</a>
+      <a href="/ads/">Реклама</a>
       <a href="/support/">Доработка</a>
       <a href="/projects/">Кейсы</a>
       <div class="more">
@@ -44,6 +45,7 @@
     <a href="/sites/">Сайты и лендинги</a>
     <a href="/bots/">Telegram-боты</a>
     <a href="/automation/">Автоматизация</a>
+    <a href="/ads/">Реклама в Яндекс и Google</a>
     <a href="/support/">Доработка и поддержка</a>
     <hr>
     <a href="/projects/">Кейсы</a>
@@ -81,8 +83,8 @@
 
   <div class="ticker" aria-hidden="true">
     <div class="ticker-in">
-      <span>Лендинги</span><span>Сайты-визитки</span><span>Telegram-боты</span><span>Интернет-магазины</span><span>Автоматизация</span><span>Доработка сайтов</span>
-      <span>Лендинги</span><span>Сайты-визитки</span><span>Telegram-боты</span><span>Интернет-магазины</span><span>Автоматизация</span><span>Доработка сайтов</span>
+      <span>Лендинги</span><span>Сайты-визитки</span><span>Telegram-боты</span><span>Интернет-магазины</span><span>Автоматизация</span><span>Реклама Яндекс и Google</span><span>Доработка сайтов</span>
+      <span>Лендинги</span><span>Сайты-визитки</span><span>Telegram-боты</span><span>Интернет-магазины</span><span>Автоматизация</span><span>Реклама Яндекс и Google</span><span>Доработка сайтов</span>
     </div>
   </div>
 
@@ -91,7 +93,7 @@
     <div class="wrap">
       <div class="head">
         <span class="kicker">Что я делаю</span>
-        <h2 class="h2">Четыре направления</h2>
+        <h2 class="h2">Пять направлений</h2>
         <p class="sub">Можно взять одно или собрать связку: например, сайт с формой заявки, которая сразу приходит вам в Telegram.</p>
       </div>
       <div class="svc">
@@ -112,6 +114,12 @@
           <h3><a href="/automation/">Автоматизация</a></h3>
           <p>Скрипты для рутины, Google Таблицы, парсеры открытых данных, связки сайта, бота и CRM по API.</p>
           <div class="pr"><span class="pv">от <b>50 BYN</b></span><span class="more-link">Подробнее</span></div>
+        </article>
+        <article class="card c5">
+          <span class="card-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11v2a1 1 0 0 0 1 1h2l5 4V6L6 10H4a1 1 0 0 0-1 1z"/><path d="M15.5 8.5a5 5 0 0 1 0 7M18.5 5.5a9 9 0 0 1 0 13"/></svg></span>
+          <h3><a href="/ads/">Реклама в Яндекс и Google</a></h3>
+          <p>Настрою контекстную рекламу с аналитикой, чтобы сайт видели те, кто уже ищет ваши услуги.</p>
+          <div class="pr"><span class="pv">от <b>200 BYN</b></span><span class="more-link">Подробнее</span></div>
         </article>
         <article class="card c4">
           <span class="card-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 0 0 5.4-5.4l-2.6 2.6-2.4-.6-.6-2.4z"/></svg></span>
@@ -332,6 +340,7 @@ const MODULES = [
   {id:'crm',     name:'Интеграция с CRM',          price:150, days:3, for:['site','bot']},
   {id:'admin',   name:'Админ-панель',              price:150, days:3, for:['bot']},
   {id:'mailing', name:'Рассылки по базе клиентов', price:80,  days:2, for:['bot']},
+  {id:'ads',     name:'Запуск рекламы Яндекс/Google', price:200, days:3, for:['site']},
   {id:'ai',      name:'ИИ-консультант*',           price:300, days:4, for:['site','bot']},
   {id:'support', name:'Поддержка 3 месяца',        price:150, days:0, for:['site','bot']}
 ];
@@ -441,7 +450,7 @@ $('runDeploy').addEventListener('click', runLog);
 
 
 </script>
-<script src="/js/bot-demo.js?v=5" defer></script>
-<script src="/js/site.js?v=5" defer></script>
+<script src="/js/bot-demo.js?v=6" defer></script>
+<script src="/js/site.js?v=6" defer></script>
 </body>
 </html>

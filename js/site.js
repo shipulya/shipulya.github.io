@@ -13,7 +13,7 @@
     document.addEventListener('keydown', function (e) {
       if (e.key === 'Escape' && !menu.hidden) { setOpen(false); burger.focus(); }
     });
-    window.addEventListener('resize', function () { if (window.innerWidth > 1080) setOpen(false); });
+    window.addEventListener('resize', function () { if (window.innerWidth > 1180) setOpen(false); });
   }
 
   // ---- "Ещё" dropdown on desktop ----
