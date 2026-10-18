@@ -397,7 +397,7 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;
 .card h3 a:focus-visible{outline:none}
 .card:focus-within{outline:3px solid var(--ink);outline-offset:4px}
 .card .more-link{font-weight:800;font-size:15px;text-decoration:underline;text-underline-offset:3px}
-.page-hero h1,.h2{hyphens:auto;-webkit-hyphens:auto;overflow-wrap:break-word}
+.page-hero h1,.h2{hyphens:manual;-webkit-hyphens:manual;overflow-wrap:break-word}
 @media (max-width:520px){.page-hero h1{font-size:clamp(30px,9vw,46px)}}
 
 /* service card footer: price on one line, link under it */
