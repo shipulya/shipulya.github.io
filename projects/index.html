@@ -21,14 +21,25 @@
   <div class="wrap">
     <a class="logo" href="../" aria-label="Глеб.dev, на главную"><i>Г</i>Глеб.dev</a>
     <nav class="nav" aria-label="Разделы">
-      <a href="../#services">Услуги</a>
-      <a href="../#calc">Калькулятор</a>
-      <a href="../#demo">Демо</a>
-      <a href="./" aria-current="page" style="border-color:var(--ink);background:var(--yellow)">Проекты</a>
-      <a href="../#faq">Вопросы</a>
+      <a href="../#services" data-sec="services">Услуги</a>
+      <a href="../#calc" data-sec="calc">Калькулятор</a>
+      <a href="../#demo" data-sec="demo">Демо-бот</a>
+      <a href="../#process" data-sec="process">Как работаю</a>
+      <a href="./" data-sec="works" aria-current="page">Проекты</a>
+      <a href="../#faq" data-sec="faq">Вопросы</a>
     </nav>
-    <a class="btn btn-y btn-sm" href="#contact">Обсудить проект</a>
+    <a class="btn btn-y btn-sm hdr-cta" href="#contact">Обсудить проект</a>
+    <button class="burger" type="button" aria-expanded="false" aria-controls="mnav" aria-label="Открыть меню"><span></span><span></span><span></span></button>
   </div>
+  <nav class="mnav" id="mnav" aria-label="Меню" hidden>
+    <a href="../#services" data-sec="services">Услуги</a>
+    <a href="../#calc" data-sec="calc">Калькулятор</a>
+    <a href="../#demo" data-sec="demo">Демо-бот</a>
+    <a href="../#process" data-sec="process">Как работаю</a>
+    <a href="./" data-sec="works" aria-current="page">Проекты</a>
+    <a href="../#faq" data-sec="faq">Вопросы</a>
+    <a class="btn btn-y" href="#contact">Обсудить проект</a>
+  </nav>
 </header>
 
 <main id="top">
@@ -142,5 +153,6 @@
     <span>сайты, боты, автоматизация</span>
   </div>
 </footer>
+<script src="../js/site.js" defer></script>
 </body>
 </html>

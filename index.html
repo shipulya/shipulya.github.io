@@ -21,15 +21,25 @@
   <div class="wrap">
     <a class="logo" href="#top" aria-label="Глеб.dev, наверх"><i>Г</i>Глеб.dev</a>
     <nav class="nav" aria-label="Разделы">
-      <a href="#services">Услуги</a>
-      <a href="#calc">Калькулятор</a>
-      <a href="#demo">Демо</a>
-      <a href="projects/">Проекты</a>
-      <a href="#process">Процесс</a>
-      <a href="#faq">Вопросы</a>
+      <a href="#services" data-sec="services">Услуги</a>
+      <a href="#calc" data-sec="calc">Калькулятор</a>
+      <a href="#demo" data-sec="demo">Демо-бот</a>
+      <a href="#process" data-sec="process">Как работаю</a>
+      <a href="#works" data-sec="works">Проекты</a>
+      <a href="#faq" data-sec="faq">Вопросы</a>
     </nav>
-    <a class="btn btn-y btn-sm" href="#contact">Обсудить проект</a>
+    <a class="btn btn-y btn-sm hdr-cta" href="#contact">Обсудить проект</a>
+    <button class="burger" type="button" aria-expanded="false" aria-controls="mnav" aria-label="Открыть меню"><span></span><span></span><span></span></button>
   </div>
+  <nav class="mnav" id="mnav" aria-label="Меню" hidden>
+    <a href="#services" data-sec="services">Услуги</a>
+    <a href="#calc" data-sec="calc">Калькулятор</a>
+    <a href="#demo" data-sec="demo">Демо-бот</a>
+    <a href="#process" data-sec="process">Как работаю</a>
+    <a href="#works" data-sec="works">Проекты</a>
+    <a href="#faq" data-sec="faq">Вопросы</a>
+    <a class="btn btn-y" href="#contact">Обсудить проект</a>
+  </nav>
 </header>
 
 <main id="top">
@@ -470,5 +480,6 @@ function resetChat(){
 $('chatReset').addEventListener('click', resetChat);
 resetChat();
 </script>
+<script src="js/site.js" defer></script>
 </body>
 </html>
