@@ -1,4 +1,5 @@
 (function () {
+  // ---- phone menu (☰) ----
   var burger = document.querySelector('.burger');
   var menu = document.getElementById('mnav');
   if (burger && menu) {
@@ -9,24 +10,27 @@
     };
     burger.addEventListener('click', function () { setOpen(menu.hidden); });
     menu.addEventListener('click', function (e) { if (e.target.closest('a')) setOpen(false); });
-    document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && !menu.hidden) { setOpen(false); burger.focus(); } });
-    window.addEventListener('resize', function () { if (window.innerWidth > 900) setOpen(false); });
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && !menu.hidden) { setOpen(false); burger.focus(); }
+    });
+    window.addEventListener('resize', function () { if (window.innerWidth > 1080) setOpen(false); });
   }
 
-  // Highlight the menu item of the section currently on screen (home page)
-  var links = Array.prototype.slice.call(document.querySelectorAll('.nav a[data-sec], .mnav a[data-sec]'));
-  var sections = links.map(function (a) { return document.getElementById(a.dataset.sec); })
-                      .filter(function (el, i, arr) { return el && arr.indexOf(el) === i; });
-  if (!sections.length || !('IntersectionObserver' in window)) return;
-  var visible = {};
-  var mark = function () {
-    var best = null;
-    sections.forEach(function (s) { if (visible[s.id] && (!best || s.offsetTop > best.offsetTop)) best = s; });
-    links.forEach(function (a) { a.classList.toggle('is-active', !!best && a.dataset.sec === best.id); });
-  };
-  var io = new IntersectionObserver(function (entries) {
-    entries.forEach(function (en) { visible[en.target.id] = en.isIntersecting; });
-    mark();
-  }, { rootMargin: '-45% 0px -50% 0px' });
-  sections.forEach(function (s) { io.observe(s); });
+  // ---- "Ещё" dropdown on desktop ----
+  var moreBtn = document.querySelector('.more-btn');
+  var moreMenu = document.getElementById('moreMenu');
+  if (moreBtn && moreMenu) {
+    var setMore = function (open) {
+      moreBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
+      moreMenu.hidden = !open;
+    };
+    moreBtn.addEventListener('click', function (e) { e.stopPropagation(); setMore(moreMenu.hidden); });
+    moreMenu.addEventListener('click', function (e) { if (e.target.closest('a')) setMore(false); });
+    document.addEventListener('click', function (e) {
+      if (!moreMenu.hidden && !e.target.closest('.more')) setMore(false);
+    });
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && !moreMenu.hidden) { setMore(false); moreBtn.focus(); }
+    });
+  }
 })();
