@@ -1,5 +1,5 @@
 /* Глеб Шипуля — site styles.
-   Wine + blush + gold. Brygada 1918 for display, Golos Text for everything else.
+   Burgundy + blush + gold. Brygada 1918 for display, Golos Text for everything else.
    One quiet system; the motion lives in the cursor, the hero and the service list. */
 
 @font-face{font-family:"Brygada";font-weight:500;font-display:swap;src:url(/fonts/brygada-1918-latin-500-normal.woff2) format("woff2")}
@@ -17,22 +17,22 @@
   color-scheme: light;
   --fog:#F0EBEA;        /* page background */
   --paper:#FAF7F6;      /* raised light surfaces */
-  --deep:#3A1622;       /* dark sections */
-  --deep-2:#4B2030;     /* surfaces on dark */
-  --deep-3:#270E17;     /* footer */
-  --ink:#24141A;        /* text on light */
+  --deep:#7A1E33;       /* dark sections */
+  --deep-2:#8C2A41;     /* surfaces on dark */
+  --deep-3:#521221;     /* footer */
+  --ink:#2A1219;        /* text on light */
   --muted:#6B5A60;
   --line:rgba(36,20,26,.14);
-  --on-deep:#F6EEEF;
-  --on-deep-muted:#CDB3BA;
-  --line-deep:rgba(246,238,239,.16);
+  --on-deep:#FBF1F3;
+  --on-deep-muted:#E6C3CB;
+  --line-deep:rgba(251,241,243,.2);
   --accent:#E9B872;     /* the one accent */
   --accent-2:#F2CB91;
   --on-accent:#24141A;
-  --chat-bg:#46202D;
-  --bubble:#5C2C3C;
-  --frame:#1E0A11;
-  --shadow:25,8,14;
+  --chat-bg:#681829;
+  --bubble:#93304A;
+  --frame:#3A0B16;
+  --shadow:40,6,16;
 
   --f-display:"Brygada", Georgia, "Times New Roman", serif;
   --f-body:"Golos", -apple-system, "Segoe UI", Roboto, sans-serif;
