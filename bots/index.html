@@ -3,86 +3,93 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Telegram-боты — Глеб.dev</title>
+<title>Telegram-боты — Глеб Шипуля</title>
 <meta name="description" content="Telegram-боты для записи клиентов, приёма заказов и ответов на вопросы. От 150 BYN, живое демо на странице.">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Telegram-боты — Глеб.dev">
+<meta property="og:title" content="Telegram-боты — Глеб Шипуля">
 <meta property="og:description" content="Бот записи, заказов и ответов на вопросы. Попробуйте демо прямо на странице.">
 <meta property="og:locale" content="ru_RU">
-<meta name="theme-color" content="#2B45FF">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect x='4' y='4' width='56' height='56' rx='14' fill='%232B45FF' stroke='%230F0F14' stroke-width='5'/%3E%3Ctext x='32' y='45' font-family='Arial,sans-serif' font-weight='900' font-size='34' text-anchor='middle' fill='%23fff'%3E%D0%93%3C/text%3E%3C/svg%3E">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@600;800;900&family=Onest:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap">
-<link rel="stylesheet" href="/css/site.css?v=7">
+<meta name="theme-color" content="#16352C">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%2316352C'/%3E%3Ctext x='32' y='46' font-family='Georgia,serif' font-weight='700' font-size='40' text-anchor='middle' fill='%23E8B04B'%3E%D0%93%3C/text%3E%3C/svg%3E">
+<link rel="preload" href="/fonts/brygada-1918-cyrillic-500-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/golos-text-cyrillic-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/css/site.css?v=8">
 </head>
 <body>
+<a class="skip" href="#main">Перейти к содержанию</a>
 <header class="hdr">
   <div class="wrap">
-    <a class="logo" href="/" aria-label="Глеб.dev, на главную"><i>Г</i>Глеб.dev</a>
+    <a class="logo" href="/" aria-label="Глеб Шипуля, на главную">Глеб Шипуля<small>разработчик</small></a>
     <nav class="nav" aria-label="Основное меню">
-      <a href="/sites/">Сайты</a>
-      <a href="/bots/" aria-current="page">Боты</a>
-      <a href="/automation/">Автоматизация</a>
-      <a href="/ads/">Реклама</a>
-      <a href="/support/">Доработка</a>
-      <a href="/projects/">Кейсы</a>
-      <div class="more">
-        <button class="more-btn" type="button" aria-expanded="false" aria-controls="moreMenu">Ещё<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button>
-        <div class="more-menu" id="moreMenu" role="menu" hidden>
-          <a href="/#calc" role="menuitem">Калькулятор</a>
-          <a href="/#process" role="menuitem">Как я работаю</a>
-          <a href="/#faq" role="menuitem">Вопросы</a>
-          <a href="/#contact" role="menuitem">Контакты</a>
+      <div class="drop">
+        <button class="drop-btn" type="button" aria-expanded="false" aria-controls="dropMenu">Услуги<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button>
+        <div class="drop-menu" id="dropMenu" hidden>
+          <a href="/sites/"><b>Сайты и лендинги</b><span>от 290 BYN</span></a>
+          <a href="/bots/" aria-current="page"><b>Telegram-боты</b><span>от 150 BYN</span></a>
+          <a href="/automation/"><b>Автоматизация</b><span>от 50 BYN</span></a>
+          <a href="/ads/"><b>Реклама в Яндекс и Google</b><span>от 200 BYN</span></a>
+          <a href="/support/"><b>Доработка и поддержка</b><span>от 35 BYN</span></a>
         </div>
       </div>
+      <a href="/projects/">Кейсы</a>
+      <a href="/#calc">Калькулятор</a>
+      <a href="/#process">Как работаю</a>
+      <a href="/#faq">Вопросы</a>
     </nav>
-    <a class="btn btn-y btn-sm hdr-cta" href="https://t.me/hlebshypulia" target="_blank" rel="noopener">Написать в Telegram</a>
-    <button class="burger" type="button" aria-expanded="false" aria-controls="mnav" aria-label="Открыть меню"><span></span><span></span><span></span></button>
+    <a class="btn btn-amber btn-sm hdr-cta" href="https://t.me/hlebshypulia" target="_blank" rel="noopener" data-magnetic="0.25">Написать в Telegram</a>
+    <button class="burger" type="button" aria-expanded="false" aria-controls="mnav" aria-label="Открыть меню"><i></i><i></i></button>
   </div>
-  <nav class="mnav" id="mnav" aria-label="Меню" hidden>
-    <p class="mnav-h">Услуги</p>
-    <a href="/sites/">Сайты и лендинги</a>
-    <a href="/bots/" aria-current="page">Telegram-боты</a>
-    <a href="/automation/">Автоматизация</a>
-    <a href="/ads/">Реклама в Яндекс и Google</a>
-    <a href="/support/">Доработка и поддержка</a>
-    <hr>
-    <a href="/projects/">Кейсы</a>
-    <a href="/#calc">Калькулятор</a>
-    <a href="/#process">Как я работаю</a>
-    <a href="/#faq">Вопросы</a>
-    <a href="/#contact">Контакты</a>
-    <a class="btn btn-y" href="https://t.me/hlebshypulia" target="_blank" rel="noopener">Написать в Telegram</a>
-  </nav>
 </header>
+<nav class="mnav" id="mnav" aria-label="Меню" hidden>
+    <a class="big" href="/sites/">Сайты и лендинги<span>от 290 BYN</span></a>
+    <a class="big" href="/bots/" aria-current="page">Telegram-боты<span>от 150 BYN</span></a>
+    <a class="big" href="/automation/">Автоматизация<span>от 50 BYN</span></a>
+    <a class="big" href="/ads/">Реклама в Яндекс и Google<span>от 200 BYN</span></a>
+    <a class="big" href="/support/">Доработка и поддержка<span>от 35 BYN</span></a>
+    <div class="sep"></div>
+    <a class="sm" href="/projects/">Кейсы</a>
+    <a class="sm" href="/#calc">Калькулятор</a>
+    <a class="sm" href="/#process">Как работаю</a>
+    <a class="sm" href="/#faq">Вопросы</a>
+    <a class="btn btn-amber" href="https://t.me/hlebshypulia" target="_blank" rel="noopener">Написать в Telegram</a>
+</nav>
 
-<main id="top">
-  <section class="band b-pink page-hero">
+<main id="main">
+  <section class="phero pine">
     <div class="wrap">
-      <p class="crumbs"><a href="/">Главная</a> / Telegram-боты</p>
-      <h1>Telegram-боты</h1>
-      <p class="sub">Бот записывает клиентов, принимает заказы и отвечает на частые вопросы круглосуточно, пока вы заняты делом.</p>
-      <div class="hero-cta">
-        <a class="btn btn-y" href="https://t.me/hlebshypulia" target="_blank" rel="noopener">Обсудить в Telegram</a>
-        <a class="btn btn-w" href="#demo">Попробовать демо</a>
+      <div>
+        <p class="crumbs"><a href="/">Главная</a> / Telegram-боты</p>
+        <h1 class="h1" data-split>Telegram-боты для бизнеса</h1>
+        <p class="lead" data-fade>Бот записывает клиентов, принимает заказы и отвечает на частые вопросы круглосуточно, пока вы заняты делом.</p>
+        <div class="hero-cta" data-fade><a class="btn btn-amber" href="https://t.me/hlebshypulia" target="_blank" rel="noopener" data-magnetic>Обсудить в Telegram</a><a class="btn btn-line" href="#demo" data-magnetic>Попробовать демо</a></div>
       </div>
+      <div class="phero-art" data-wipe><div class="mock-big" aria-hidden="true"><div class="mock mock-chat">
+  <div class="m">Здравствуйте! Выберите услугу</div>
+  <div class="kb"><span>Стрижка</span><span>Борода</span><span>Комплекс</span></div>
+  <div class="m me">Стрижка</div>
+  <div class="m">Свободно сегодня: 15:00, 17:30, 19:00</div>
+  <div class="m me">17:30</div>
+  <div class="m">Готово! Напомню за 2 часа до визита</div>
+</div></div></div>
     </div>
   </section>
-  <section class="band b-yellow" id="demo">
+  <section class="sec " id="demo">
     <div class="wrap">
-      <div class="head"><span class="kicker">Живое демо</span><h2 class="h2">Попробуйте бота записи</h2><p class="sub">Нажимайте кнопки: так бот работает в Telegram у ваших клиентов.</p></div>
+      <div class="sec-head">
+        <h2 class="h2" data-split>Попробуйте бота записи</h2>
+        <p class="lead" data-fade>Нажимайте кнопки: так бот работает в Telegram у ваших клиентов.</p>
+      </div>
       <div class="demo">
         <div class="points">
-          <div class="point"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span><b>Записывает 24/7.</b> Клиент выбирает услугу и время сам, даже ночью.</span></div>
-          <div class="point"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 8a6 6 0 1 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.9 1.9 0 0 0 3.4 0"/></svg><span><b>Сразу сообщает вам.</b> О каждой записи приходит уведомление.</span></div>
-          <div class="point"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16v12H5.2L4 17.2z"/><path d="M8 9h8M8 12h5"/></svg><span><b>Напоминает клиенту.</b> Меньше людей забывают прийти.</span></div>
+          <div data-fade><b>Записывает круглосуточно</b><span>Клиент выбирает услугу и время сам, даже ночью.</span></div>
+          <div data-fade><b>Сразу сообщает вам</b><span>О каждой записи приходит уведомление.</span></div>
+          <div data-fade><b>Напоминает клиенту</b><span>Меньше людей забывают прийти.</span></div>
         </div>
         <div class="chat" id="chat">
           <div class="chat-top">
-            <div class="chat-av">Л</div>
+            <div class="chat-av" aria-hidden="true">Л</div>
             <div><div class="nm">Барбершоп «Лезвие»</div><div class="st">бот онлайн</div></div>
-            <button class="btn btn-w btn-sm" id="chatReset" type="button">Заново</button>
+            <button class="btn btn-line" id="chatReset" type="button">Заново</button>
           </div>
           <div class="chat-log" id="chatLog" aria-live="polite"></div>
           <div class="chat-kb" id="chatKb"></div>
@@ -90,79 +97,76 @@
       </div>
     </div>
   </section>
-  <section class="band b-paper">
+  <section class="sec paper">
     <div class="wrap">
-      <div class="head"><span class="kicker">Что вы получаете</span><h2 class="h2">Что умеют мои боты</h2></div>
+      <div class="sec-head solo">
+        <h2 class="h2" data-split>Что умеют мои боты</h2>
+      </div>
       <div class="feats">
-        <div class="feat"><b>Меню и ответы на вопросы</b><span>Цены, адрес, график работы без звонков администратору.</span></div>
-        <div class="feat"><b>Запись и заказы</b><span>Клиент выбирает услугу, время или товар прямо в чате.</span></div>
-        <div class="feat"><b>Уведомления вам</b><span>О каждой заявке бот сразу пишет вам или сотруднику.</span></div>
-        <div class="feat"><b>Напоминания клиентам</b><span>Бот сам напомнит о визите или неоплаченном заказе.</span></div>
-        <div class="feat"><b>Оплата в боте</b><span>Приём оплаты без перехода на сайт.</span></div>
-        <div class="feat"><b>Админка и рассылки</b><span>Управление записями и сообщения всей базе клиентов.</span></div>
+        <div class="feat" data-fade><h3>Меню и ответы на вопросы</h3><p>Цены, адрес, график работы без звонков администратору.</p></div>
+        <div class="feat" data-fade><h3>Запись и заказы</h3><p>Клиент выбирает услугу, время или товар прямо в чате.</p></div>
+        <div class="feat" data-fade><h3>Уведомления вам</h3><p>О каждой заявке бот сразу пишет вам или сотруднику.</p></div>
+        <div class="feat" data-fade><h3>Напоминания клиентам</h3><p>Бот сам напомнит о визите или неоплаченном заказе.</p></div>
+        <div class="feat" data-fade><h3>Оплата в боте</h3><p>Приём оплаты без перехода на сайт.</p></div>
+        <div class="feat" data-fade><h3>Админка и рассылки</h3><p>Управление записями и сообщения всей базе клиентов.</p></div>
       </div>
     </div>
   </section>
-  <section class="band b-soft" id="prices">
+  <section class="sec " id="prices">
     <div class="wrap">
-      <div class="head"><span class="kicker">Цены, BYN</span><h2 class="h2">Сколько стоит бот</h2><p class="sub">Цены «от» за простую версию. Точную сумму назову после разбора задачи.</p></div>
-      <div class="plists">
-      <div class="plist">
-        <h3>Основа</h3>
-        <ul>
-          <li><span class="n">Бот-визитка, FAQ, меню услуг</span><span class="lead" aria-hidden="true"></span><span class="p">от 150</span></li>
-          <li><span class="n">Уведомления о заявках с сайта</span><span class="lead" aria-hidden="true"></span><span class="p">от 100</span></li>
-          <li><span class="n">Запись клиентов или приём заказов</span><span class="lead" aria-hidden="true"></span><span class="p">от 250</span></li>
-          <li><span class="n">Бот с ИИ-консультантом<small>оплата ИИ-сервиса отдельно</small></span><span class="lead" aria-hidden="true"></span><span class="p">от 300</span></li>
-          <li><span class="n">Бот с оплатой, админкой или CRM</span><span class="lead" aria-hidden="true"></span><span class="p">от 400</span></li>
-        </ul>
+      <div class="sec-head">
+        <h2 class="h2" data-split>Сколько стоит бот</h2>
+        <p class="lead" data-fade>Цены «от» за простую версию. Точную сумму назову после разбора задачи.</p>
       </div>
-      <div class="plist plist-opts">
-        <h3>Дополнительно</h3>
-        <ul>
-          <li><span class="n">Онлайн-запись по слотам</span><span class="lead" aria-hidden="true"></span><span class="p">+120</span></li>
-          <li><span class="n">Онлайн-оплата</span><span class="lead" aria-hidden="true"></span><span class="p">+200</span></li>
-          <li><span class="n">Заявки в Google Таблицу</span><span class="lead" aria-hidden="true"></span><span class="p">+60</span></li>
-          <li><span class="n">Интеграция с CRM</span><span class="lead" aria-hidden="true"></span><span class="p">+150</span></li>
-          <li><span class="n">Админ-панель</span><span class="lead" aria-hidden="true"></span><span class="p">+150</span></li>
-          <li><span class="n">Рассылки по базе клиентов</span><span class="lead" aria-hidden="true"></span><span class="p">+80</span></li>
-          <li><span class="n">Поддержка 3 месяца</span><span class="lead" aria-hidden="true"></span><span class="p">+150</span></li>
-        </ul>
-      </div>
+      <div class="ptables">
+        <div class="ptable">
+          <h3>Основа, BYN</h3>
+          <ul>
+          <li><span class="n">Бот-визитка, ответы, меню услуг</span><span class="p">от 150</span></li>
+          <li><span class="n">Уведомления о заявках с сайта</span><span class="p">от 100</span></li>
+          <li><span class="n">Запись клиентов или приём заказов</span><span class="p">от 250</span></li>
+          <li><span class="n">Бот с ИИ-консультантом<small>оплата ИИ-сервиса отдельно</small></span><span class="p">от 300</span></li>
+          <li><span class="n">Бот с оплатой, админкой или CRM</span><span class="p">от 400</span></li>
+          </ul>
+        </div>
+        <div class="ptable opts">
+          <h3>Дополнительно, BYN</h3>
+          <ul>
+          <li><span class="n">Онлайн-запись по слотам</span><span class="p">+120</span></li>
+          <li><span class="n">Онлайн-оплата</span><span class="p">+200</span></li>
+          <li><span class="n">Заявки в Google Таблицу</span><span class="p">+60</span></li>
+          <li><span class="n">Интеграция с CRM</span><span class="p">+150</span></li>
+          <li><span class="n">Админ-панель</span><span class="p">+150</span></li>
+          <li><span class="n">Рассылки по базе клиентов</span><span class="p">+80</span></li>
+          <li><span class="n">Поддержка 3 месяца</span><span class="p">+150</span></li>
+          </ul>
+        </div>
       </div>
       <p class="pnote">Сервер для работы бота оплачивается отдельно, помогу подобрать недорогой.</p>
     </div>
   </section>
-  <section class="band b-blue cta" id="contact">
+  <section class="sec pine contact" id="contact">
     <div class="wrap">
       <div>
-        <span class="status"><span class="dot"></span>Свободен для новых проектов</span>
-        <h2 class="h2">Нужен <span class="y">бот</span>? Напишите</h2>
-        <p class="sub">Расскажите, что бот должен делать: записывать, принимать заказы или отвечать на вопросы. Назову цену и срок.</p>
-      </div>
-      <div class="contacts">
-        <div class="contact">
-          <span class="ci"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 4 3 11l6 2 2 6 3-4 5 4z"/><path d="m9 13 8-6"/></svg></span>
-          <span class="tx"><small>Telegram</small><b>@hlebshypulia</b></span>
-          <a class="btn btn-y btn-sm" href="https://t.me/hlebshypulia" target="_blank" rel="noopener">Написать</a>
-        </div>
-        <div class="contact">
-          <span class="ci"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16l-1.5 12h-13z"/><path d="M9 7a3 3 0 0 1 6 0"/></svg></span>
-          <span class="tx"><small>Куфар</small><b>Объявление и отзывы</b></span>
-          <a class="btn btn-w btn-sm" href="https://www.kufar.by/item/1089806398" target="_blank" rel="noopener">Открыть</a>
+        <h2 data-split>Нужен бот? Расскажите, что он должен делать</h2>
+        <p class="lead" data-fade>Записывать, принимать заказы или отвечать на вопросы. Назову цену и срок.</p>
+        <div class="contact-links" data-fade>
+          <a class="link" href="https://t.me/hlebshypulia" target="_blank" rel="noopener">@hlebshypulia в Telegram</a>
+          <a class="link" href="https://www.kufar.by/item/1089806398" target="_blank" rel="noopener">Объявление на Куфаре</a>
         </div>
       </div>
+      <a class="orb" href="https://t.me/hlebshypulia" target="_blank" rel="noopener" data-magnetic="0.4"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 4 3 11l6 2 2 6 3-4 5 4z"/><path d="m9 13 8-6"/></svg>Написать в Telegram</a>
     </div>
   </section>
 </main>
 
-<footer>
+<footer class="foot">
   <div class="wrap">
     <span>© 2026 Шипуля Глеб Вячеславович, плательщик налога на профессиональный доход, УНП HE7440877. Беларусь</span>
-    <span>сайты, боты, автоматизация</span>
+    <span>Telegram <a href="https://t.me/hlebshypulia" target="_blank" rel="noopener">@hlebshypulia</a></span>
   </div>
 </footer>
-<script src="/js/bot-demo.js?v=6" defer></script>
-<script src="/js/site.js?v=6" defer></script>
+<script src="/js/bot-demo.js?v=8" defer></script>
+<script src="/js/site.js?v=8" defer></script>
 </body>
 </html>

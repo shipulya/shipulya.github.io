@@ -3,171 +3,155 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Проекты — Глеб.dev</title>
-<meta name="description" content="Реальные проекты: интернет-магазин шин ШинЛайн и автоматизация отчётов по продажам. Плюс демо-концепты сайтов и Telegram-ботов.">
+<title>Проекты — Глеб Шипуля</title>
+<meta name="description" content="Реальные проекты: интернет-магазин шин ШинЛайн и программа «Отчёты по продажам». Демо сайтов и Telegram-бота.">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Проекты — Глеб.dev">
-<meta property="og:description" content="Интернет-магазин шин ШинЛайн, автоматизация отчётов (2 дня → 15 минут в месяц) и демо-концепты.">
+<meta property="og:title" content="Проекты — Глеб Шипуля">
+<meta property="og:description" content="Интернет-магазин ШинЛайн и автоматизация отчётов: 2 дня в месяц превратились в 15 минут.">
 <meta property="og:locale" content="ru_RU">
-<meta name="theme-color" content="#2B45FF">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect x='4' y='4' width='56' height='56' rx='14' fill='%232B45FF' stroke='%230F0F14' stroke-width='5'/%3E%3Ctext x='32' y='45' font-family='Arial,sans-serif' font-weight='900' font-size='34' text-anchor='middle' fill='%23fff'%3E%D0%93%3C/text%3E%3C/svg%3E">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@600;800;900&family=Onest:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap">
-<link rel="stylesheet" href="/css/site.css?v=7">
+<meta name="theme-color" content="#16352C">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%2316352C'/%3E%3Ctext x='32' y='46' font-family='Georgia,serif' font-weight='700' font-size='40' text-anchor='middle' fill='%23E8B04B'%3E%D0%93%3C/text%3E%3C/svg%3E">
+<link rel="preload" href="/fonts/brygada-1918-cyrillic-500-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/golos-text-cyrillic-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/css/site.css?v=8">
 </head>
 <body>
+<a class="skip" href="#main">Перейти к содержанию</a>
 <header class="hdr">
   <div class="wrap">
-    <a class="logo" href="/" aria-label="Глеб.dev, на главную"><i>Г</i>Глеб.dev</a>
+    <a class="logo" href="/" aria-label="Глеб Шипуля, на главную">Глеб Шипуля<small>разработчик</small></a>
     <nav class="nav" aria-label="Основное меню">
-      <a href="/sites/">Сайты</a>
-      <a href="/bots/">Боты</a>
-      <a href="/automation/">Автоматизация</a>
-      <a href="/ads/">Реклама</a>
-      <a href="/support/">Доработка</a>
+      <div class="drop">
+        <button class="drop-btn" type="button" aria-expanded="false" aria-controls="dropMenu">Услуги<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button>
+        <div class="drop-menu" id="dropMenu" hidden>
+          <a href="/sites/"><b>Сайты и лендинги</b><span>от 290 BYN</span></a>
+          <a href="/bots/"><b>Telegram-боты</b><span>от 150 BYN</span></a>
+          <a href="/automation/"><b>Автоматизация</b><span>от 50 BYN</span></a>
+          <a href="/ads/"><b>Реклама в Яндекс и Google</b><span>от 200 BYN</span></a>
+          <a href="/support/"><b>Доработка и поддержка</b><span>от 35 BYN</span></a>
+        </div>
+      </div>
       <a href="/projects/" aria-current="page">Кейсы</a>
-      <div class="more">
-        <button class="more-btn" type="button" aria-expanded="false" aria-controls="moreMenu">Ещё<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button>
-        <div class="more-menu" id="moreMenu" role="menu" hidden>
-          <a href="/#calc" role="menuitem">Калькулятор</a>
-          <a href="/#process" role="menuitem">Как я работаю</a>
-          <a href="/#faq" role="menuitem">Вопросы</a>
-          <a href="/#contact" role="menuitem">Контакты</a>
-        </div>
-      </div>
+      <a href="/#calc">Калькулятор</a>
+      <a href="/#process">Как работаю</a>
+      <a href="/#faq">Вопросы</a>
     </nav>
-    <a class="btn btn-y btn-sm hdr-cta" href="https://t.me/hlebshypulia" target="_blank" rel="noopener">Написать в Telegram</a>
-    <button class="burger" type="button" aria-expanded="false" aria-controls="mnav" aria-label="Открыть меню"><span></span><span></span><span></span></button>
+    <a class="btn btn-amber btn-sm hdr-cta" href="https://t.me/hlebshypulia" target="_blank" rel="noopener" data-magnetic="0.25">Написать в Telegram</a>
+    <button class="burger" type="button" aria-expanded="false" aria-controls="mnav" aria-label="Открыть меню"><i></i><i></i></button>
   </div>
-  <nav class="mnav" id="mnav" aria-label="Меню" hidden>
-    <p class="mnav-h">Услуги</p>
-    <a href="/sites/">Сайты и лендинги</a>
-    <a href="/bots/">Telegram-боты</a>
-    <a href="/automation/">Автоматизация</a>
-    <a href="/ads/">Реклама в Яндекс и Google</a>
-    <a href="/support/">Доработка и поддержка</a>
-    <hr>
-    <a href="/projects/" aria-current="page">Кейсы</a>
-    <a href="/#calc">Калькулятор</a>
-    <a href="/#process">Как я работаю</a>
-    <a href="/#faq">Вопросы</a>
-    <a href="/#contact">Контакты</a>
-    <a class="btn btn-y" href="https://t.me/hlebshypulia" target="_blank" rel="noopener">Написать в Telegram</a>
-  </nav>
 </header>
+<nav class="mnav" id="mnav" aria-label="Меню" hidden>
+    <a class="big" href="/sites/">Сайты и лендинги<span>от 290 BYN</span></a>
+    <a class="big" href="/bots/">Telegram-боты<span>от 150 BYN</span></a>
+    <a class="big" href="/automation/">Автоматизация<span>от 50 BYN</span></a>
+    <a class="big" href="/ads/">Реклама в Яндекс и Google<span>от 200 BYN</span></a>
+    <a class="big" href="/support/">Доработка и поддержка<span>от 35 BYN</span></a>
+    <div class="sep"></div>
+    <a class="sm" href="/projects/" aria-current="page">Кейсы</a>
+    <a class="sm" href="/#calc">Калькулятор</a>
+    <a class="sm" href="/#process">Как работаю</a>
+    <a class="sm" href="/#faq">Вопросы</a>
+    <a class="btn btn-amber" href="https://t.me/hlebshypulia" target="_blank" rel="noopener">Написать в Telegram</a>
+</nav>
 
-<main id="top">
-  <section class="band b-blue page-hero">
-    <div class="wrap">
-      <p class="crumbs"><a href="../">Главная</a> / Проекты</p>
-      <h1>Проекты</h1>
-      <p class="sub">Реальные работы, которые уже приносят пользу бизнесу, и демо-концепты для других типов задач.</p>
-    </div>
-  </section>
-
-  <section class="band b-paper">
-    <div class="wrap">
-      <article class="case" id="shinline">
-        <div>
-          <span class="case-tag">Реальный проект</span>
-          <h3>ШинЛайн</h3>
-          <p class="where">Интернет-магазин шин и шиномонтаж, Гродно</p>
-          <p class="desc">Сайт с каталогом из тысяч шин, подбором по размеру и онлайн-записью на шиномонтаж. Клиент находит нужный размер, кладёт комплект в корзину и оформляет заказ с доставкой по Беларуси.</p>
-          <ul>
-            <li>Каталог и подбор по размеру</li>
-            <li>Фильтры: сезон, бренд, диаметр</li>
-            <li>Корзина и заказ</li>
-            <li>Онлайн-запись на шиномонтаж</li>
-            <li>Рассрочка</li>
-            <li>Адаптив под телефон</li>
-          </ul>
-          <a class="btn btn-y" href="https://shinline.by" target="_blank" rel="noopener">Открыть shinline.by</a>
-        </div>
-        <div class="phones">
-          <div class="phone"><img src="../img/shinline-hero.jpg" alt="Главный экран сайта ШинЛайн на телефоне" loading="lazy" width="800" height="1283"></div>
-          <div class="phone"><img src="../img/shinline-catalog.jpg" alt="Каталог шин с ценами и кнопкой «В корзину» на сайте ШинЛайн" loading="lazy" width="800" height="1283"></div>
-        </div>
-      </article>
-      <article class="case case-rev" id="reports">
-        <div>
-          <span class="case-tag">Реальный проект</span>
-          <h3>Отчёты по продажам</h3>
-          <p class="where">Автоматизация учёта, настраивается под любой бизнес</p>
-          <p class="desc">Избавляет от ручного переноса чеков и накладных в таблицу. Файлы перетаскивают в окно, а приложение само читает фото чеков и накладные и заполняет листы расхода и прихода. Формат документов и таблиц подстраивается под ваш учёт.</p>
-          <div class="result" role="group" aria-label="Время на отчёты в месяц: было 2 дня, стало 15 минут">
-            <span class="was">2 дня</span><span class="arr" aria-hidden="true">→</span><span class="now">15 минут</span>
-            <small>столько времени в месяц уходит на отчёты</small>
-          </div>
-          <ul>
-            <li>Фото чеков → лист РАСХОД</li>
-            <li>Накладные ТТН .xls / .xlsx → лист ПРИХОД</li>
-            <li>Перетаскивание файлов</li>
-            <li>Очередь и журнал обработки</li>
-            <li>Обработка в один клик</li>
-            <li>Настройка под ваши документы</li>
-          </ul>
-        </div>
-        <div class="case-media">
-          <div class="appshot"><img src="../img/reports-app.jpg" alt="Окно приложения «Отчёты по продажам»: зоны для чеков и накладных, кнопки обработки и журнал выполнения" loading="lazy" width="988" height="671"></div>
-        </div>
-      </article>
-    </div>
-  </section>
-
-  <section class="band b-ink">
-    <div class="wrap">
-      <div class="head">
-        <span class="kicker">Демо</span>
-        <h2 class="h2">Концепты</h2>
-        <p class="sub" style="color:#D6D6E0">Так может выглядеть проект для вашего бизнеса. Это примеры, а не работы для реальных клиентов.</p>
-      </div>
-      <div class="works">
-        <article class="work">
-          <div class="shot"><div class="m-cafe"><div class="n">Зерно<span><span>Меню</span><span>О нас</span><span>Контакты</span></span></div><div class="h"><div>Кофе, ради которого приходят снова<i></i></div><div class="img"></div></div></div><span class="demo-tag">ДЕМО</span></div>
-          <div class="wb"><div class="meta"><span>Лендинг</span><span>от 290 BYN</span></div><h3>Кофейня «Зерно»</h3><p>Одна страница с меню, бронированием стола и заявками прямо в мессенджер.</p></div>
-        </article>
-        <article class="work">
-          <div class="shot"><div class="m-nail"><div class="txt">Маникюр без очередей<small>запись онлайн · 24/7</small></div><div class="ph"><b>NAILS.ROOM</b><i></i><i></i><i></i></div></div><span class="demo-tag">ДЕМО</span></div>
-          <div class="wb"><div class="meta"><span>Сайт для мастера</span><span>490 BYN</span></div><h3>Студия маникюра</h3><p>Услуги, цены, фото работ и онлайн-запись. Одна ссылка для Instagram и визитки.</p></div>
-        </article>
-        <article class="work">
-          <div class="shot"><div class="m-bot"><div class="b">Выберите услугу</div><div class="u">Стрижка</div><div class="b">Свободно: 15:00 · 17:30 · 19:00</div><div class="u">17:30</div><div class="b">Готово! Напомню за 2 часа ✓</div></div><span class="demo-tag">ДЕМО</span></div>
-          <div class="wb"><div class="meta"><span>Telegram-бот</span><span>от 250 BYN</span></div><h3>Барбершоп «Лезвие»</h3><p>Бот записи с выбором времени, напоминаниями и уведомлениями администратору.</p></div>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <section class="band b-blue cta" id="contact">
+<main id="main">
+  <section class="phero pine solo">
     <div class="wrap">
       <div>
-        <span class="status"><span class="dot"></span>Свободен для новых проектов</span>
-        <h2 class="h2">Нужно <span class="y">похожее</span>? Напишите</h2>
-        <p class="sub">Опишите задачу в двух словах, а я назову цену и срок. Стоимость можно прикинуть в <a href="../#calc" style="color:var(--yellow)">калькуляторе на главной</a>.</p>
+        <p class="crumbs"><a href="/">Главная</a> / Кейсы</p>
+        <h1 class="h1" data-split>Проекты</h1>
+        <p class="lead" data-fade>Реальные работы, которые уже приносят пользу бизнесу, и демо для других типов задач.</p>
+        
       </div>
-      <div class="contacts">
-        <div class="contact">
-          <span class="ci"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 4 3 11l6 2 2 6 3-4 5 4z"/><path d="m9 13 8-6"/></svg></span>
-          <span class="tx"><small>Telegram</small><b>@hlebshypulia</b></span>
-          <a class="btn btn-y btn-sm" href="https://t.me/hlebshypulia" target="_blank" rel="noopener">Написать</a>
-        </div>
-        <div class="contact">
-          <span class="ci"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16l-1.5 12h-13z"/><path d="M9 7a3 3 0 0 1 6 0"/></svg></span>
-          <span class="tx"><small>Куфар</small><b>Объявление и отзывы</b></span>
-          <a class="btn btn-w btn-sm" href="https://www.kufar.by/item/1089806398" target="_blank" rel="noopener">Открыть</a>
+    </div>
+  </section>
+  <section class="sec pine cont">
+    <div class="wrap">
+
+      <div class="cases">
+        <article class="case" id="shinline">
+          <a class="case-media" href="https://shinline.by" target="_blank" rel="noopener" data-cursor="Открыть" data-wipe aria-label="Открыть сайт shinline.by"><div class="phone-pair"><div class="ph"><img src="/img/shinline-hero.jpg" alt="Главный экран сайта ШинЛайн на телефоне" width="800" height="1283" loading="lazy"></div><div class="ph"><img src="/img/shinline-catalog.jpg" alt="Каталог шин с ценами на сайте ШинЛайн" width="800" height="1283" loading="lazy"></div></div></a>
+          <div>
+            <h3 data-split>ШинЛайн</h3>
+            <p class="where">Интернет-магазин шин и шиномонтаж, Гродно</p>
+            <p class="desc">Каталог из тысяч шин с подбором по размеру и онлайн-записью на шиномонтаж. Клиент находит нужный размер, кладёт комплект в корзину и оформляет заказ с доставкой по Беларуси.</p>
+            <ul class="tags"><li>Каталог и подбор по размеру</li><li>Фильтры: сезон, бренд, диаметр</li><li>Корзина и заказ</li><li>Онлайн-запись на шиномонтаж</li><li>Рассрочка</li><li>Адаптив под телефон</li></ul>
+            <div class="actions">
+            <a class="btn btn-amber btn-sm" href="https://shinline.by" target="_blank" rel="noopener">Открыть shinline.by</a>
+            </div>
+          </div>
+        </article>
+        <article class="case flip" id="reports">
+          <a class="case-media" href="/automation/" data-cursor="Хочу так же" data-wipe><div class="shot"><img src="/img/reports-app.jpg" alt="Окно программы «Отчёты по продажам»: зоны для чеков и накладных, кнопки обработки и журнал" width="988" height="671" loading="lazy"></div></a>
+          <div>
+            <h3 data-split>Отчёты по продажам</h3>
+            <p class="where">Автоматизация учёта, настраивается под любой бизнес</p>
+            <p class="desc">Избавляет от ручного переноса чеков и накладных в таблицу. Файлы перетаскивают в окно, а программа сама читает фото чеков и накладные и заполняет листы расхода и прихода.</p>
+            <div class="result" role="group" aria-label="Время на отчёты в месяц: было 2 дня, стало 15 минут">
+              <s>2 дня</s><b>15 минут</b><small>столько времени в месяц теперь уходит на отчёты</small>
+            </div>
+            <ul class="tags"><li>Фото чеков в лист РАСХОД</li><li>Накладные .xls и .xlsx в лист ПРИХОД</li><li>Обработка в один клик</li><li>Перетаскивание файлов</li><li>Очередь и журнал обработки</li><li>Настройка под ваши документы</li></ul>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+  <section class="sec ">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2 class="h2" data-split>Демо</h2>
+        <p class="lead" data-fade>Так может выглядеть проект для вашего бизнеса. Это примеры, а не работы для реальных клиентов.</p>
+      </div>
+      <div class="concepts">
+        <article class="concept" data-fade>
+          <div class="frame" aria-hidden="true"><div class="c-cafe"><div class="n"><b>Зерно</b><span>Меню · О нас · Контакты</span></div><h4>Кофе, ради которого приходят снова</h4><i>Забронировать стол</i><div class="img"></div></div></div>
+          <h3>Кофейня «Зерно»</h3>
+          <p>Одна страница с меню, бронированием стола и заявками прямо в мессенджер.</p>
+          <p class="meta">Демо лендинга, от 290 BYN</p>
+        </article>
+        <article class="concept" data-fade>
+          <div class="frame" aria-hidden="true"><div class="c-nails"><div><h4>Маникюр без очередей</h4><small>запись онлайн круглосуточно</small></div><div class="ph"><b>NAILS.ROOM</b><i></i><i></i><i></i></div></div></div>
+          <h3>Студия маникюра</h3>
+          <p>Услуги, цены, фото работ и онлайн-запись. Одна ссылка для Instagram и визитки.</p>
+          <p class="meta">Демо сайта для мастера, 490 BYN</p>
+        </article>
+        <article class="concept" data-fade>
+          <div class="frame" aria-hidden="true"><div class="c-bot"><div class="mock mock-chat">
+  <div class="m">Здравствуйте! Выберите услугу</div>
+  <div class="kb"><span>Стрижка</span><span>Борода</span><span>Комплекс</span></div>
+  <div class="m me">Стрижка</div>
+  <div class="m">Свободно сегодня: 15:00, 17:30, 19:00</div>
+  <div class="m me">17:30</div>
+  <div class="m">Готово! Напомню за 2 часа до визита</div>
+</div></div></div>
+          <h3>Барбершоп «Лезвие»</h3>
+          <p>Бот записи с выбором времени, напоминаниями и уведомлениями администратору.</p>
+          <p class="meta">Демо Telegram-бота, от 250 BYN. <a class="link" href="/bots/#demo">Попробовать</a></p>
+        </article>
+      </div>
+    </div>
+  </section>
+  <section class="sec pine contact" id="contact">
+    <div class="wrap">
+      <div>
+        <h2 data-split>Нужно похожее? Напишите</h2>
+        <p class="lead" data-fade>Опишите задачу в двух словах, а я назову цену и срок. Стоимость можно прикинуть в <a class="link" href="/#calc">калькуляторе</a>.</p>
+        <div class="contact-links" data-fade>
+          <a class="link" href="https://t.me/hlebshypulia" target="_blank" rel="noopener">@hlebshypulia в Telegram</a>
+          <a class="link" href="https://www.kufar.by/item/1089806398" target="_blank" rel="noopener">Объявление на Куфаре</a>
         </div>
       </div>
+      <a class="orb" href="https://t.me/hlebshypulia" target="_blank" rel="noopener" data-magnetic="0.4"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 4 3 11l6 2 2 6 3-4 5 4z"/><path d="m9 13 8-6"/></svg>Написать в Telegram</a>
     </div>
   </section>
 </main>
 
-<footer>
+<footer class="foot">
   <div class="wrap">
     <span>© 2026 Шипуля Глеб Вячеславович, плательщик налога на профессиональный доход, УНП HE7440877. Беларусь</span>
-    <span>сайты, боты, автоматизация</span>
+    <span>Telegram <a href="https://t.me/hlebshypulia" target="_blank" rel="noopener">@hlebshypulia</a></span>
   </div>
 </footer>
-<script src="/js/site.js?v=6" defer></script>
+<script src="/js/site.js?v=8" defer></script>
 </body>
 </html>

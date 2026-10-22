@@ -3,159 +3,146 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Автоматизация рутины — Глеб.dev</title>
+<title>Автоматизация рутины — Глеб Шипуля</title>
 <meta name="description" content="Скрипты и программы, которые делают отчёты, переносят данные и собирают таблицы. Кейс: отчёты по продажам за 15 минут вместо 2 дней в месяц.">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Автоматизация рутины — Глеб.dev">
+<meta property="og:title" content="Автоматизация рутины — Глеб Шипуля">
 <meta property="og:description" content="Автоматизация отчётов и таблиц: 2 дня в месяц превратились в 15 минут.">
 <meta property="og:locale" content="ru_RU">
-<meta name="theme-color" content="#2B45FF">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect x='4' y='4' width='56' height='56' rx='14' fill='%232B45FF' stroke='%230F0F14' stroke-width='5'/%3E%3Ctext x='32' y='45' font-family='Arial,sans-serif' font-weight='900' font-size='34' text-anchor='middle' fill='%23fff'%3E%D0%93%3C/text%3E%3C/svg%3E">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@600;800;900&family=Onest:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap">
-<link rel="stylesheet" href="/css/site.css?v=7">
+<meta name="theme-color" content="#16352C">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%2316352C'/%3E%3Ctext x='32' y='46' font-family='Georgia,serif' font-weight='700' font-size='40' text-anchor='middle' fill='%23E8B04B'%3E%D0%93%3C/text%3E%3C/svg%3E">
+<link rel="preload" href="/fonts/brygada-1918-cyrillic-500-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/golos-text-cyrillic-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/css/site.css?v=8">
 </head>
 <body>
+<a class="skip" href="#main">Перейти к содержанию</a>
 <header class="hdr">
   <div class="wrap">
-    <a class="logo" href="/" aria-label="Глеб.dev, на главную"><i>Г</i>Глеб.dev</a>
+    <a class="logo" href="/" aria-label="Глеб Шипуля, на главную">Глеб Шипуля<small>разработчик</small></a>
     <nav class="nav" aria-label="Основное меню">
-      <a href="/sites/">Сайты</a>
-      <a href="/bots/">Боты</a>
-      <a href="/automation/" aria-current="page">Автоматизация</a>
-      <a href="/ads/">Реклама</a>
-      <a href="/support/">Доработка</a>
+      <div class="drop">
+        <button class="drop-btn" type="button" aria-expanded="false" aria-controls="dropMenu">Услуги<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button>
+        <div class="drop-menu" id="dropMenu" hidden>
+          <a href="/sites/"><b>Сайты и лендинги</b><span>от 290 BYN</span></a>
+          <a href="/bots/"><b>Telegram-боты</b><span>от 150 BYN</span></a>
+          <a href="/automation/" aria-current="page"><b>Автоматизация</b><span>от 50 BYN</span></a>
+          <a href="/ads/"><b>Реклама в Яндекс и Google</b><span>от 200 BYN</span></a>
+          <a href="/support/"><b>Доработка и поддержка</b><span>от 35 BYN</span></a>
+        </div>
+      </div>
       <a href="/projects/">Кейсы</a>
-      <div class="more">
-        <button class="more-btn" type="button" aria-expanded="false" aria-controls="moreMenu">Ещё<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button>
-        <div class="more-menu" id="moreMenu" role="menu" hidden>
-          <a href="/#calc" role="menuitem">Калькулятор</a>
-          <a href="/#process" role="menuitem">Как я работаю</a>
-          <a href="/#faq" role="menuitem">Вопросы</a>
-          <a href="/#contact" role="menuitem">Контакты</a>
-        </div>
-      </div>
+      <a href="/#calc">Калькулятор</a>
+      <a href="/#process">Как работаю</a>
+      <a href="/#faq">Вопросы</a>
     </nav>
-    <a class="btn btn-y btn-sm hdr-cta" href="https://t.me/hlebshypulia" target="_blank" rel="noopener">Написать в Telegram</a>
-    <button class="burger" type="button" aria-expanded="false" aria-controls="mnav" aria-label="Открыть меню"><span></span><span></span><span></span></button>
+    <a class="btn btn-amber btn-sm hdr-cta" href="https://t.me/hlebshypulia" target="_blank" rel="noopener" data-magnetic="0.25">Написать в Telegram</a>
+    <button class="burger" type="button" aria-expanded="false" aria-controls="mnav" aria-label="Открыть меню"><i></i><i></i></button>
   </div>
-  <nav class="mnav" id="mnav" aria-label="Меню" hidden>
-    <p class="mnav-h">Услуги</p>
-    <a href="/sites/">Сайты и лендинги</a>
-    <a href="/bots/">Telegram-боты</a>
-    <a href="/automation/" aria-current="page">Автоматизация</a>
-    <a href="/ads/">Реклама в Яндекс и Google</a>
-    <a href="/support/">Доработка и поддержка</a>
-    <hr>
-    <a href="/projects/">Кейсы</a>
-    <a href="/#calc">Калькулятор</a>
-    <a href="/#process">Как я работаю</a>
-    <a href="/#faq">Вопросы</a>
-    <a href="/#contact">Контакты</a>
-    <a class="btn btn-y" href="https://t.me/hlebshypulia" target="_blank" rel="noopener">Написать в Telegram</a>
-  </nav>
 </header>
+<nav class="mnav" id="mnav" aria-label="Меню" hidden>
+    <a class="big" href="/sites/">Сайты и лендинги<span>от 290 BYN</span></a>
+    <a class="big" href="/bots/">Telegram-боты<span>от 150 BYN</span></a>
+    <a class="big" href="/automation/" aria-current="page">Автоматизация<span>от 50 BYN</span></a>
+    <a class="big" href="/ads/">Реклама в Яндекс и Google<span>от 200 BYN</span></a>
+    <a class="big" href="/support/">Доработка и поддержка<span>от 35 BYN</span></a>
+    <div class="sep"></div>
+    <a class="sm" href="/projects/">Кейсы</a>
+    <a class="sm" href="/#calc">Калькулятор</a>
+    <a class="sm" href="/#process">Как работаю</a>
+    <a class="sm" href="/#faq">Вопросы</a>
+    <a class="btn btn-amber" href="https://t.me/hlebshypulia" target="_blank" rel="noopener">Написать в Telegram</a>
+</nav>
 
-<main id="top">
-  <section class="band b-blue page-hero">
-    <div class="wrap">
-      <p class="crumbs"><a href="/">Главная</a> / Автоматизация</p>
-      <h1>Автоматизация рутины</h1>
-      <p class="sub">Скрипты и программы, которые сами делают отчёты, переносят данные и собирают таблицы. Часы ручной работы превращаются в минуты.</p>
-      <div class="hero-cta">
-        <a class="btn btn-y" href="https://t.me/hlebshypulia" target="_blank" rel="noopener">Обсудить в Telegram</a>
-      </div>
-    </div>
-  </section>
-  <section class="band b-paper">
-    <div class="wrap">
-      <div class="head"><span class="kicker">Кейс</span><h2 class="h2">Реальный результат</h2></div>
-      <article class="case case-rev" id="reports">
-        <div>
-          <span class="case-tag">Реальный проект</span>
-          <h3>Отчёты по продажам</h3>
-          <p class="where">Автоматизация учёта, настраивается под любой бизнес</p>
-          <p class="desc">Избавляет от ручного переноса чеков и накладных в таблицу. Файлы перетаскивают в окно, а приложение само читает фото чеков и накладные и заполняет листы расхода и прихода. Формат документов и таблиц подстраивается под ваш учёт.</p>
-          <div class="result" role="group" aria-label="Время на отчёты в месяц: было 2 дня, стало 15 минут">
-            <span class="was">2 дня</span><span class="arr" aria-hidden="true">→</span><span class="now">15 минут</span>
-            <small>столько времени в месяц уходит на отчёты</small>
-          </div>
-          <ul>
-            <li>Фото чеков → лист РАСХОД</li>
-            <li>Накладные ТТН .xls / .xlsx → лист ПРИХОД</li>
-            <li>Перетаскивание файлов</li>
-            <li>Очередь и журнал обработки</li>
-            <li>Обработка в один клик</li>
-            <li>Настройка под ваши документы</li>
-          </ul>
-        </div>
-        <div class="case-media">
-          <div class="appshot"><img src="/img/reports-app.jpg" alt="Окно приложения «Отчёты по продажам»: зоны для чеков и накладных, кнопки обработки и журнал выполнения" loading="lazy" width="988" height="671"></div>
-        </div>
-      </article>
-
-    </div>
-  </section>
-  <section class="band b-soft" id="prices">
-    <div class="wrap">
-      <div class="head"><span class="kicker">Цены, BYN</span><h2 class="h2">Что можно автоматизировать</h2><p class="sub">Типовые задачи и цены «от». Если вашей задачи нет в списке, напишите: скорее всего, её тоже можно решить.</p></div>
-      <div class="plists">
-      <div class="plist">
-        <h3>Основа</h3>
-        <ul>
-          <li><span class="n">Excel и Google Таблицы<small>формулы, отчёты, автоподсчёт</small></span><span class="lead" aria-hidden="true"></span><span class="p">от 50</span></li>
-          <li><span class="n">Скрипт для рутины<small>обработка файлов, сведение данных</small></span><span class="lead" aria-hidden="true"></span><span class="p">от 80</span></li>
-          <li><span class="n">Парсер открытых данных в таблицу</span><span class="lead" aria-hidden="true"></span><span class="p">от 120</span></li>
-          <li><span class="n">Отчёты и рассылки по расписанию</span><span class="lead" aria-hidden="true"></span><span class="p">от 120</span></li>
-          <li><span class="n">Связка сервисов по API<small>сайт, Telegram, таблицы, CRM</small></span><span class="lead" aria-hidden="true"></span><span class="p">от 150</span></li>
-          <li><span class="n">Веб-приложение, личный кабинет</span><span class="lead" aria-hidden="true"></span><span class="p">от 600</span></li>
-          <li><span class="n">Программа под вашу задачу<small>как «Отчёты по продажам»</small></span><span class="lead" aria-hidden="true"></span><span class="p">по договорённости</span></li>
-        </ul>
-      </div>
-      </div>
-    </div>
-  </section>
-  <section class="band b-paper">
-    <div class="wrap">
-      <div class="head"><span class="kicker">Как работаю</span><h2 class="h2">От рутины к кнопке</h2></div>
-      <div class="steps">
-        <div class="step"><span class="n">01</span><h3>Опишите рутину</h3><p>Что делаете вручную, сколько это занимает и в каких файлах.</p></div>
-        <div class="step"><span class="n">02</span><h3>Оценка выгоды</h3><p>Бесплатно скажу, что можно автоматизировать, сколько это стоит и сколько времени сэкономит.</p></div>
-        <div class="step"><span class="n">03</span><h3>Разработка</h3><p>Делаю скрипт или программу под ваши документы и таблицы.</p></div>
-        <div class="step"><span class="n">04</span><h3>Настройка у вас</h3><p>Устанавливаю, показываю, как пользоваться, и остаюсь на связи.</p></div>
-      </div>
-    </div>
-  </section>
-  <section class="band b-blue cta" id="contact">
+<main id="main">
+  <section class="phero pine">
     <div class="wrap">
       <div>
-        <span class="status"><span class="dot"></span>Свободен для новых проектов</span>
-        <h2 class="h2">Что у вас <span class="y">отнимает время</span>?</h2>
-        <p class="sub">Опишите задачу, которую делаете вручную. Скажу, можно ли её автоматизировать, сколько это стоит и сколько времени сэкономит.</p>
+        <p class="crumbs"><a href="/">Главная</a> / Автоматизация</p>
+        <h1 class="h1" data-split>Автоматизация рутины</h1>
+        <p class="lead" data-fade>Скрипты и программы, которые сами делают отчёты, переносят данные и собирают таблицы. Часы ручной работы превращаются в минуты.</p>
+        <div class="hero-cta" data-fade><a class="btn btn-amber" href="https://t.me/hlebshypulia" target="_blank" rel="noopener" data-magnetic>Обсудить в Telegram</a></div>
       </div>
-      <div class="contacts">
-        <div class="contact">
-          <span class="ci"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 4 3 11l6 2 2 6 3-4 5 4z"/><path d="m9 13 8-6"/></svg></span>
-          <span class="tx"><small>Telegram</small><b>@hlebshypulia</b></span>
-          <a class="btn btn-y btn-sm" href="https://t.me/hlebshypulia" target="_blank" rel="noopener">Написать</a>
-        </div>
-        <div class="contact">
-          <span class="ci"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16l-1.5 12h-13z"/><path d="M9 7a3 3 0 0 1 6 0"/></svg></span>
-          <span class="tx"><small>Куфар</small><b>Объявление и отзывы</b></span>
-          <a class="btn btn-w btn-sm" href="https://www.kufar.by/item/1089806398" target="_blank" rel="noopener">Открыть</a>
+      <div class="phero-art" data-wipe><div class="shot"><img src="/img/reports-app.jpg" alt="Окно программы «Отчёты по продажам»: зоны для чеков и накладных, кнопки обработки и журнал" width="988" height="671"></div></div>
+    </div>
+  </section>
+  <section class="sec pine cont">
+    <div class="wrap">
+      <div class="sec-head solo">
+        <h2 class="h2" data-split>Реальный результат</h2>
+      </div>
+      <div class="cases">
+        <article class="case flip" id="reports">
+          <a class="case-media" href="https://t.me/hlebshypulia" target="_blank" rel="noopener" data-cursor="Написать" data-wipe><div class="shot"><img src="/img/reports-app.jpg" alt="Окно программы «Отчёты по продажам»: зоны для чеков и накладных, кнопки обработки и журнал" width="988" height="671" loading="lazy"></div></a>
+          <div>
+            <h3 data-split>Отчёты по продажам</h3>
+            <p class="where">Автоматизация учёта, настраивается под любой бизнес</p>
+            <p class="desc">Избавляет от ручного переноса чеков и накладных в таблицу. Файлы перетаскивают в окно, а программа сама читает фото чеков и накладные и заполняет листы расхода и прихода.</p>
+            <div class="result" role="group" aria-label="Время на отчёты в месяц: было 2 дня, стало 15 минут">
+              <s>2 дня</s><b>15 минут</b><small>столько времени в месяц теперь уходит на отчёты</small>
+            </div>
+            <ul class="tags"><li>Фото чеков в лист РАСХОД</li><li>Накладные .xls и .xlsx в лист ПРИХОД</li><li>Обработка в один клик</li><li>Перетаскивание файлов</li><li>Очередь и журнал обработки</li><li>Настройка под ваши документы</li></ul>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+  <section class="sec " id="prices">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2 class="h2" data-split>Что можно автоматизировать</h2>
+        <p class="lead" data-fade>Типовые задачи и цены «от». Если вашей задачи нет в списке, напишите: скорее всего, её тоже можно решить.</p>
+      </div>
+      <div class="ptables solo">
+        <div class="ptable">
+          <h3>Основа, BYN</h3>
+          <ul>
+          <li><span class="n">Excel и Google Таблицы<small>формулы, отчёты, автоподсчёт</small></span><span class="p">от 50</span></li>
+          <li><span class="n">Скрипт для рутины<small>обработка файлов, сведение данных</small></span><span class="p">от 80</span></li>
+          <li><span class="n">Парсер открытых данных в таблицу</span><span class="p">от 120</span></li>
+          <li><span class="n">Отчёты и рассылки по расписанию</span><span class="p">от 120</span></li>
+          <li><span class="n">Связка сервисов по API<small>сайт, Telegram, таблицы, CRM</small></span><span class="p">от 150</span></li>
+          <li><span class="n">Веб-приложение, личный кабинет</span><span class="p">от 600</span></li>
+          <li><span class="n">Программа под вашу задачу<small>как «Отчёты по продажам»</small></span><span class="p">по договорённости</span></li>
+          </ul>
         </div>
       </div>
+    </div>
+  </section>
+  <section class="sec paper">
+    <div class="wrap">
+      <div class="sec-head solo">
+        <h2 class="h2" data-split>От рутины к одной кнопке</h2>
+      </div>
+      <ol class="steps">
+        <li class="step" data-fade><span class="num">01</span><h3>Опишите рутину</h3><p>Что делаете вручную, сколько это занимает и в каких файлах.</p></li>
+        <li class="step" data-fade><span class="num">02</span><h3>Оценка выгоды</h3><p>Бесплатно скажу, что можно автоматизировать, сколько это стоит и сколько времени сэкономит.</p><span class="pay free">Бесплатно</span></li>
+        <li class="step" data-fade><span class="num">03</span><h3>Разработка</h3><p>Делаю скрипт или программу под ваши документы и таблицы.</p></li>
+        <li class="step" data-fade><span class="num">04</span><h3>Настройка у вас</h3><p>Устанавливаю, показываю, как пользоваться, и остаюсь на связи.</p></li>
+      </ol>
+    </div>
+  </section>
+  <section class="sec pine contact" id="contact">
+    <div class="wrap">
+      <div>
+        <h2 data-split>Что у вас отнимает время?</h2>
+        <p class="lead" data-fade>Опишите задачу, которую делаете вручную. Скажу, можно ли её автоматизировать, сколько это стоит и сколько времени сэкономит.</p>
+        <div class="contact-links" data-fade>
+          <a class="link" href="https://t.me/hlebshypulia" target="_blank" rel="noopener">@hlebshypulia в Telegram</a>
+          <a class="link" href="https://www.kufar.by/item/1089806398" target="_blank" rel="noopener">Объявление на Куфаре</a>
+        </div>
+      </div>
+      <a class="orb" href="https://t.me/hlebshypulia" target="_blank" rel="noopener" data-magnetic="0.4"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 4 3 11l6 2 2 6 3-4 5 4z"/><path d="m9 13 8-6"/></svg>Написать в Telegram</a>
     </div>
   </section>
 </main>
 
-<footer>
+<footer class="foot">
   <div class="wrap">
     <span>© 2026 Шипуля Глеб Вячеславович, плательщик налога на профессиональный доход, УНП HE7440877. Беларусь</span>
-    <span>сайты, боты, автоматизация</span>
+    <span>Telegram <a href="https://t.me/hlebshypulia" target="_blank" rel="noopener">@hlebshypulia</a></span>
   </div>
 </footer>
-<script src="/js/site.js?v=6" defer></script>
+<script src="/js/site.js?v=8" defer></script>
 </body>
 </html>

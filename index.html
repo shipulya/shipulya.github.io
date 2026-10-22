@@ -3,155 +3,222 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Глеб.dev — сайты и Telegram-боты под ключ в Беларуси</title>
-<meta name="description" content="Лендинги, сайты для бизнеса и Telegram-боты под ключ. Калькулятор стоимости, демо-бот, работа как самозанятый с чеком. Удалённо по всей Беларуси.">
+<title>Глеб Шипуля — сайты, Telegram-боты и автоматизация для бизнеса</title>
+<meta name="description" content="Лендинги, сайты для бизнеса, Telegram-боты, автоматизация и реклама под ключ. Работаю как самозанятый с чеком, удалённо по всей Беларуси.">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Глеб.dev — сайты и Telegram-боты под ключ">
-<meta property="og:description" content="Лендинги от 290 BYN, Telegram-боты от 150 BYN. Посчитайте стоимость проекта онлайн.">
+<meta property="og:title" content="Глеб Шипуля — сайты, Telegram-боты и автоматизация для бизнеса">
+<meta property="og:description" content="Сайты от 290 BYN, Telegram-боты от 150 BYN. Калькулятор стоимости и реальные кейсы.">
 <meta property="og:locale" content="ru_RU">
-<meta name="theme-color" content="#2B45FF">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect x='4' y='4' width='56' height='56' rx='14' fill='%232B45FF' stroke='%230F0F14' stroke-width='5'/%3E%3Ctext x='32' y='45' font-family='Arial,sans-serif' font-weight='900' font-size='34' text-anchor='middle' fill='%23fff'%3E%D0%93%3C/text%3E%3C/svg%3E">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@600;800;900&family=Onest:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap">
-<link rel="stylesheet" href="/css/site.css?v=7">
+<meta name="theme-color" content="#16352C">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%2316352C'/%3E%3Ctext x='32' y='46' font-family='Georgia,serif' font-weight='700' font-size='40' text-anchor='middle' fill='%23E8B04B'%3E%D0%93%3C/text%3E%3C/svg%3E">
+<link rel="preload" href="/fonts/brygada-1918-cyrillic-500-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/golos-text-cyrillic-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/css/site.css?v=8">
 </head>
 <body>
+<a class="skip" href="#main">Перейти к содержанию</a>
 <header class="hdr">
   <div class="wrap">
-    <a class="logo" href="/" aria-label="Глеб.dev, на главную"><i>Г</i>Глеб.dev</a>
+    <a class="logo" href="/" aria-label="Глеб Шипуля, на главную">Глеб Шипуля<small>разработчик</small></a>
     <nav class="nav" aria-label="Основное меню">
-      <a href="/sites/">Сайты</a>
-      <a href="/bots/">Боты</a>
-      <a href="/automation/">Автоматизация</a>
-      <a href="/ads/">Реклама</a>
-      <a href="/support/">Доработка</a>
+      <div class="drop">
+        <button class="drop-btn" type="button" aria-expanded="false" aria-controls="dropMenu">Услуги<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button>
+        <div class="drop-menu" id="dropMenu" hidden>
+          <a href="/sites/"><b>Сайты и лендинги</b><span>от 290 BYN</span></a>
+          <a href="/bots/"><b>Telegram-боты</b><span>от 150 BYN</span></a>
+          <a href="/automation/"><b>Автоматизация</b><span>от 50 BYN</span></a>
+          <a href="/ads/"><b>Реклама в Яндекс и Google</b><span>от 200 BYN</span></a>
+          <a href="/support/"><b>Доработка и поддержка</b><span>от 35 BYN</span></a>
+        </div>
+      </div>
       <a href="/projects/">Кейсы</a>
-      <div class="more">
-        <button class="more-btn" type="button" aria-expanded="false" aria-controls="moreMenu">Ещё<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button>
-        <div class="more-menu" id="moreMenu" role="menu" hidden>
-          <a href="/#calc" role="menuitem">Калькулятор</a>
-          <a href="/#process" role="menuitem">Как я работаю</a>
-          <a href="/#faq" role="menuitem">Вопросы</a>
-          <a href="/#contact" role="menuitem">Контакты</a>
-        </div>
-      </div>
+      <a href="/#calc">Калькулятор</a>
+      <a href="/#process">Как работаю</a>
+      <a href="/#faq">Вопросы</a>
     </nav>
-    <a class="btn btn-y btn-sm hdr-cta" href="https://t.me/hlebshypulia" target="_blank" rel="noopener">Написать в Telegram</a>
-    <button class="burger" type="button" aria-expanded="false" aria-controls="mnav" aria-label="Открыть меню"><span></span><span></span><span></span></button>
+    <a class="btn btn-amber btn-sm hdr-cta" href="https://t.me/hlebshypulia" target="_blank" rel="noopener" data-magnetic="0.25">Написать в Telegram</a>
+    <button class="burger" type="button" aria-expanded="false" aria-controls="mnav" aria-label="Открыть меню"><i></i><i></i></button>
   </div>
-  <nav class="mnav" id="mnav" aria-label="Меню" hidden>
-    <p class="mnav-h">Услуги</p>
-    <a href="/sites/">Сайты и лендинги</a>
-    <a href="/bots/">Telegram-боты</a>
-    <a href="/automation/">Автоматизация</a>
-    <a href="/ads/">Реклама в Яндекс и Google</a>
-    <a href="/support/">Доработка и поддержка</a>
-    <hr>
-    <a href="/projects/">Кейсы</a>
-    <a href="/#calc">Калькулятор</a>
-    <a href="/#process">Как я работаю</a>
-    <a href="/#faq">Вопросы</a>
-    <a href="/#contact">Контакты</a>
-    <a class="btn btn-y" href="https://t.me/hlebshypulia" target="_blank" rel="noopener">Написать в Telegram</a>
-  </nav>
 </header>
+<nav class="mnav" id="mnav" aria-label="Меню" hidden>
+    <a class="big" href="/sites/">Сайты и лендинги<span>от 290 BYN</span></a>
+    <a class="big" href="/bots/">Telegram-боты<span>от 150 BYN</span></a>
+    <a class="big" href="/automation/">Автоматизация<span>от 50 BYN</span></a>
+    <a class="big" href="/ads/">Реклама в Яндекс и Google<span>от 200 BYN</span></a>
+    <a class="big" href="/support/">Доработка и поддержка<span>от 35 BYN</span></a>
+    <div class="sep"></div>
+    <a class="sm" href="/projects/">Кейсы</a>
+    <a class="sm" href="/#calc">Калькулятор</a>
+    <a class="sm" href="/#process">Как работаю</a>
+    <a class="sm" href="/#faq">Вопросы</a>
+    <a class="btn btn-amber" href="https://t.me/hlebshypulia" target="_blank" rel="noopener">Написать в Telegram</a>
+</nav>
 
-<main id="top">
-  <!-- HERO -->
-  <section class="band b-blue hero">
-    <div class="wrap">
+<main id="main">
+  <section class="hero pine">
+    <div class="wrap hero-main">
       <div>
-        <span class="status"><span class="dot"></span>Принимаю заказы · онлайн</span>
-        <h1>Сайты и боты, которые <span class="y">работают</span>, пока вы <span class="box">заняты</span></h1>
-        <p class="sub">Я Глеб, разработчик из Беларуси. Делаю <b>лендинги</b>, <b>сайты для бизнеса</b> и <b>Telegram-ботов</b> под ключ: от первого макета до запуска на вашем домене.</p>
-        <div class="hero-cta">
-          <a class="btn btn-y" href="#calc">Рассчитать стоимость →</a>
-          <a class="btn btn-w" href="#demo">Попробовать бота</a>
+        <h1 class="h1" data-split>Сайты, которые приводят заявки, и боты, которые на них отвечают</h1>
+        <p class="lead" data-fade data-delay="550">Я Глеб, разработчик из Беларуси. Делаю всё сам, от макета до запуска, поэтому вы общаетесь напрямую с тем, кто пишет код.</p>
+        <div class="hero-cta" data-fade data-delay="700">
+          <a class="btn btn-amber" href="https://t.me/hlebshypulia" target="_blank" rel="noopener" data-magnetic>Написать в Telegram</a>
+          <a class="btn btn-line" href="#calc" data-magnetic>Посчитать стоимость</a>
         </div>
       </div>
-      <div class="hero-side">
-        <div class="sticker st-price">от<b>290</b>BYN</div>
-        <div class="term" aria-label="Пример журнала запуска сайта">
-          <div class="term-bar"><i></i><i></i><i></i><button class="btn btn-y" id="runDeploy" type="button">▶ Запустить</button></div>
-          <div class="term-body" id="termBody"></div>
-        </div>
-        <div class="sticker st-check">✓ Выдаю чек НПД</div>
+      <div class="hero-art" data-fade data-delay="250">
+        <div class="layer art-app" data-depth="-26"><img src="/img/reports-app.jpg" alt="Окно программы «Отчёты по продажам»: зоны для чеков и накладных, кнопки обработки и журнал" width="988" height="671"></div>
+        <div class="layer art-phone" data-depth="40"><img src="/img/shinline-hero.jpg" alt="Главный экран сайта ШинЛайн на телефоне" width="800" height="1283"></div>
+        <div class="layer art-cap" data-depth="18"><b>2 дня → 15 минут</b>столько теперь уходит на отчёты по продажам в месяц</div>
+      </div>
+    </div>
+    <div class="wrap">
+      <div class="hero-facts" data-fade data-delay="900">
+        <div><b>Чек самозанятого</b>подходит для ИП и организаций</div>
+        <div><b>Макет бесплатно</b>первый экран до оплаты</div>
+        <div><b>Код и домен ваши</b>передаю все доступы</div>
+        <div><b>По всей Беларуси</b>в переписке и по видеосвязи</div>
       </div>
     </div>
   </section>
 
-  <div class="ticker" aria-hidden="true">
-    <div class="ticker-in">
-      <span>Лендинги</span><span>Сайты-визитки</span><span>Telegram-боты</span><span>Интернет-магазины</span><span>Автоматизация</span><span>Реклама Яндекс и Google</span><span>Доработка сайтов</span>
-      <span>Лендинги</span><span>Сайты-визитки</span><span>Telegram-боты</span><span>Интернет-магазины</span><span>Автоматизация</span><span>Реклама Яндекс и Google</span><span>Доработка сайтов</span>
-    </div>
-  </div>
-
-  <!-- SERVICES -->
-  <section class="band b-paper" id="services">
+  <section class="sec " id="services">
     <div class="wrap">
-      <div class="head">
-        <span class="kicker">Что я делаю</span>
-        <h2 class="h2">Пять направлений</h2>
-        <p class="sub">Можно взять одно или собрать связку: например, сайт с формой заявки, которая сразу приходит вам в Telegram.</p>
+      <div class="sec-head">
+        <h2 class="h2" data-split>Чем могу помочь</h2>
+        <p class="lead" data-fade>Можно взять одно направление или связку. Например, сайт, заявки с которого сразу приходят вам в Telegram.</p>
       </div>
-      <div class="svc">
-        <article class="card c1">
-          <span class="card-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M7 13h6M7 16h4"/></svg></span>
-          <h3><a href="/sites/">Сайты и лендинги</a></h3>
-          <p>Лендинги, визитки, сайты для бизнеса и каталоги. Адаптив под телефон, форма заявки, SEO-основа и аналитика.</p>
-          <div class="pr"><span class="pv">от <b>290 BYN</b></span><span class="more-link">Подробнее</span></div>
-        </article>
-        <article class="card c2">
-          <span class="card-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 21l1.9-5.4A8 8 0 1 1 21 12z"/><path d="M9 12h.01M12 12h.01M15 12h.01"/></svg></span>
-          <h3><a href="/bots/">Telegram-боты</a></h3>
-          <p>Запись клиентов, приём заказов, ответы на частые вопросы, уведомления. Работает круглосуточно без администратора.</p>
-          <div class="pr"><span class="pv">от <b>150 BYN</b></span><span class="more-link">Подробнее</span></div>
-        </article>
-        <article class="card c3">
-          <span class="card-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="7" cy="7" r="3"/><circle cx="17" cy="17" r="3"/><path d="M10 7h5a2 2 0 0 1 2 2v5M14 17H9a2 2 0 0 1-2-2v-5"/></svg></span>
-          <h3><a href="/automation/">Автоматизация</a></h3>
-          <p>Скрипты для рутины, Google Таблицы, парсеры открытых данных, связки сайта, бота и CRM по API.</p>
-          <div class="pr"><span class="pv">от <b>50 BYN</b></span><span class="more-link">Подробнее</span></div>
-        </article>
-        <article class="card c5">
-          <span class="card-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11v2a1 1 0 0 0 1 1h2l5 4V6L6 10H4a1 1 0 0 0-1 1z"/><path d="M15.5 8.5a5 5 0 0 1 0 7M18.5 5.5a9 9 0 0 1 0 13"/></svg></span>
-          <h3><a href="/ads/">Реклама в Яндекс и Google</a></h3>
-          <p>Настрою контекстную рекламу с аналитикой, чтобы сайт видели те, кто уже ищет ваши услуги.</p>
-          <div class="pr"><span class="pv">от <b>200 BYN</b></span><span class="more-link">Подробнее</span></div>
-        </article>
-        <article class="card c4">
-          <span class="card-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 0 0 5.4-5.4l-2.6 2.6-2.4-.6-.6-2.4z"/></svg></span>
-          <h3><a href="/support/">Доработка и поддержка</a></h3>
-          <p>Исправлю вёрстку, добавлю блок или страницу, ускорю сайт, перенесу на другой хостинг. Мелочи часто в тот же день.</p>
-          <div class="pr"><span class="pv">от <b>35 BYN</b></span><span class="more-link">Подробнее</span></div>
-        </article>
-      </div>
+      <ul class="svc-list">
+        <li class="svc-row" data-key="sites">
+          <a href="/sites/">
+            <h3>Сайты и лендинги</h3>
+            <p>Лендинги, визитки, сайты для бизнеса и интернет-магазины. Адаптив, заявки в Telegram, аналитика.</p>
+            <span class="price">от 290 BYN</span>
+            <span class="go"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          </a>
+        </li>
+        <li class="svc-row" data-key="bots">
+          <a href="/bots/">
+            <h3>Telegram-боты</h3>
+            <p>Запись клиентов, приём заказов, ответы на частые вопросы. Работают круглосуточно.</p>
+            <span class="price">от 150 BYN</span>
+            <span class="go"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          </a>
+        </li>
+        <li class="svc-row" data-key="automation">
+          <a href="/automation/">
+            <h3>Автоматизация</h3>
+            <p>Скрипты и программы, которые сами делают отчёты, сводят таблицы и переносят данные.</p>
+            <span class="price">от 50 BYN</span>
+            <span class="go"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          </a>
+        </li>
+        <li class="svc-row" data-key="ads">
+          <a href="/ads/">
+            <h3>Реклама в Яндекс и Google</h3>
+            <p>Контекстная реклама с аналитикой: вас находят те, кто уже ищет ваши услуги.</p>
+            <span class="price">от 200 BYN</span>
+            <span class="go"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          </a>
+        </li>
+        <li class="svc-row" data-key="support">
+          <a href="/support/">
+            <h3>Доработка и поддержка</h3>
+            <p>Исправлю вёрстку, добавлю блок или страницу, ускорю сайт. Мелочи часто в тот же день.</p>
+            <span class="price">от 35 BYN</span>
+            <span class="go"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          </a>
+        </li>
+      </ul>
     </div>
   </section>
-
-  <!-- CALCULATOR -->
-  <section class="band b-yellow" id="calc">
+  <div class="preview" aria-hidden="true"><div class="preview-in">
+    <img data-key="sites" src="/img/shinline-hero.jpg" alt="" loading="lazy">
+    <div data-key="bots"><div class="mock mock-chat">
+  <div class="m">Здравствуйте! Выберите услугу</div>
+  <div class="kb"><span>Стрижка</span><span>Борода</span><span>Комплекс</span></div>
+  <div class="m me">Стрижка</div>
+  <div class="m">Свободно сегодня: 15:00, 17:30, 19:00</div>
+  <div class="m me">17:30</div>
+  <div class="m">Готово! Напомню за 2 часа до визита</div>
+</div></div>
+    <img data-key="automation" src="/img/reports-app.jpg" alt="" loading="lazy">
+    <div data-key="ads"><div class="mock mock-ad">
+  <div class="q">шиномонтаж гродно</div>
+  <div class="r"><small>Реклама · example.by</small><b>Шиномонтаж в Гродно. Запись онлайн за минуту</b><p>Без очередей, работаем без выходных. Шины в наличии.</p><div class="sl"><span>Цены</span><span>Запись</span><span>Адрес</span></div></div>
+  <div class="r dim"><small>example2.by</small><b>Шины и диски: каталог</b><p>Подбор по размеру автомобиля.</p></div>
+</div></div>
+    <div data-key="support"><div class="mock mock-speed">
+  <div class="row"><div class="ring bad">38</div><div><b>До: 38 из 100</b><span>оценка скорости на телефоне</span></div></div>
+  <div class="row"><div class="ring good">96</div><div><b>После: 96 из 100</b><span>сжатые фото, чистый код</span></div></div>
+</div></div>
+  </div></div>
+  <section class="sec pine" id="works">
     <div class="wrap">
-      <div class="head">
-        <span class="kicker">Калькулятор</span>
-        <h2 class="h2">Соберите свой проект</h2>
-        <p class="sub">Выберите основу и нужные модули, справа сразу появится цена и срок. Точную сумму назову после короткого бесплатного разбора задачи.</p>
+      <div class="sec-head">
+        <h2 class="h2" data-split>Работы, которые уже приносят пользу</h2>
+        <p class="lead" data-fade>Интернет-магазин с подбором шин и программа, которая сама делает отчёты по продажам.</p>
+      </div>
+      <div class="cases">
+        <article class="case" id="shinline">
+          <a class="case-media" href="https://shinline.by" target="_blank" rel="noopener" data-cursor="Открыть" data-wipe aria-label="Открыть сайт shinline.by"><div class="phone-pair"><div class="ph"><img src="/img/shinline-hero.jpg" alt="Главный экран сайта ШинЛайн на телефоне" width="800" height="1283" loading="lazy"></div><div class="ph"><img src="/img/shinline-catalog.jpg" alt="Каталог шин с ценами на сайте ШинЛайн" width="800" height="1283" loading="lazy"></div></div></a>
+          <div>
+            <h3 data-split>ШинЛайн</h3>
+            <p class="where">Интернет-магазин шин и шиномонтаж, Гродно</p>
+            <p class="desc">Каталог из тысяч шин с подбором по размеру и онлайн-записью на шиномонтаж. Клиент находит нужный размер, кладёт комплект в корзину и оформляет заказ с доставкой по Беларуси.</p>
+            <ul class="tags"><li>Каталог и подбор по размеру</li><li>Корзина и заказ</li><li>Онлайн-запись на шиномонтаж</li><li>Рассрочка</li></ul>
+            <div class="actions">
+            <a class="btn btn-amber btn-sm" href="https://shinline.by" target="_blank" rel="noopener">Открыть shinline.by</a>
+            <a class="btn btn-line btn-sm" href="/projects/#shinline">Подробнее о проекте</a>
+            </div>
+          </div>
+        </article>
+        <article class="case flip" id="reports">
+          <a class="case-media" href="/projects/#reports" data-cursor="Подробнее" data-wipe><div class="shot"><img src="/img/reports-app.jpg" alt="Окно программы «Отчёты по продажам»: зоны для чеков и накладных, кнопки обработки и журнал" width="988" height="671" loading="lazy"></div></a>
+          <div>
+            <h3 data-split>Отчёты по продажам</h3>
+            <p class="where">Автоматизация учёта, настраивается под любой бизнес</p>
+            <p class="desc">Избавляет от ручного переноса чеков и накладных в таблицу. Файлы перетаскивают в окно, а программа сама читает фото чеков и накладные и заполняет листы расхода и прихода.</p>
+            <div class="result" role="group" aria-label="Время на отчёты в месяц: было 2 дня, стало 15 минут">
+              <s>2 дня</s><b>15 минут</b><small>столько времени в месяц теперь уходит на отчёты</small>
+            </div>
+            <ul class="tags"><li>Фото чеков в лист РАСХОД</li><li>Накладные .xls и .xlsx в лист ПРИХОД</li><li>Обработка в один клик</li></ul>
+          </div>
+        </article>
+      </div>
+      <div class="center-cta"><a class="btn btn-line" href="/projects/" data-magnetic>Все проекты и демо</a></div>
+    </div>
+  </section>
+  <section class="sec " id="process">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2 class="h2" data-split>Как проходит работа</h2>
+        <p class="lead" data-fade>Платите, когда видите, что направление вам подходит. До этого всё бесплатно.</p>
+      </div>
+      <ol class="steps">
+        <li class="step" data-fade><span class="num">01</span><h3>Разбор задачи</h3><p>Пишете своими словами, что нужно. Задаю вопросы и называю точную цену и срок.</p><span class="pay free">Бесплатно</span></li>
+        <li class="step" data-fade><span class="num">02</span><h3>Макет первого экрана</h3><p>Показываю, как будет выглядеть главное. Не понравилось направление, расходимся.</p><span class="pay free">Бесплатно</span></li>
+        <li class="step" data-fade><span class="num">03</span><h3>Разработка</h3><p>Делаю проект на тестовом адресе. Смотрите промежуточный результат и вносите правки.</p><span class="pay">50% на старте</span></li>
+        <li class="step" data-fade><span class="num">04</span><h3>Запуск и передача</h3><p>Публикую на вашем домене, передаю код, доступы и инструкцию.</p><span class="pay">50% после приёмки</span></li>
+      </ol>
+    </div>
+  </section>
+  <section class="sec paper" id="calc">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2 class="h2" data-split>Сколько будет стоить</h2>
+        <p class="lead" data-fade>Выберите основу и нужные модули, сумма и срок посчитаются сразу. Точную цену назову после бесплатного разбора задачи.</p>
       </div>
       <div class="calc">
-        <div class="panel">
-          <fieldset style="border:0;margin:0;padding:0;min-width:0">
-            <legend class="step-h"><span>1</span>Основа проекта</legend>
+        <div>
+          <fieldset>
+            <legend>Основа проекта</legend>
             <div class="plats" id="plats"></div>
           </fieldset>
-          <div>
-            <div class="step-h"><span>2</span>Уже входит в цену</div>
-            <div class="included" id="included"></div>
-          </div>
-          <fieldset style="border:0;margin:0;padding:0;min-width:0">
-            <legend class="step-h"><span>3</span>Дополнительные модули</legend>
-            <div class="mods-list" id="modsList"></div>
+          <p class="calc-h" style="font-family:var(--f-display);font-size:26px;margin:0 0 16px">Уже входит в цену</p>
+          <div class="included" id="included"></div>
+          <fieldset>
+            <legend>Дополнительные модули</legend>
+            <div class="mods" id="modsList"></div>
           </fieldset>
         </div>
         <aside class="est" aria-live="polite">
@@ -160,297 +227,49 @@
           <span class="est-days" id="estDays"></span>
           <ul class="est-list" id="estList"></ul>
           <p class="est-note">Домен и хостинг оплачиваются отдельно по тарифам провайдера. Помогу выбрать и оформлю на вас.</p>
-          <button class="btn btn-y" id="copyCalc" type="button">Скопировать расчёт</button>
-          <a class="btn btn-w" href="#contact">Отправить мне в Telegram</a>
+          <button class="btn btn-amber" id="copyCalc" type="button">Скопировать расчёт</button>
+          <a class="btn btn-line" href="https://t.me/hlebshypulia" target="_blank" rel="noopener">Отправить в Telegram</a>
           <div class="copied" id="copied" role="status"></div>
         </aside>
       </div>
     </div>
   </section>
-
-  <!-- DEMO -->
-  <section class="band b-pink" id="demo">
-    <div class="wrap demo">
-      <div>
-        <span class="kicker">Живое демо</span>
-        <h2 class="h2">Попробуйте бота записи</h2>
-        <p class="sub">Пример бота, который записывает клиентов в барбершоп. Нажимайте кнопки: всё работает так же, как в Telegram.</p>
-        <div class="points">
-          <div class="point"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span><b>Работает 24/7.</b> Клиент записывается ночью, а вы утром видите готовую запись.</span></div>
-          <div class="point"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 8a6 6 0 1 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.9 1.9 0 0 0 3.4 0"/></svg><span><b>Уведомления.</b> О каждой записи бот сразу пишет вам.</span></div>
-          <div class="point"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16v12H5.2L4 17.2z"/><path d="M8 9h8M8 12h5"/></svg><span><b>Напоминания.</b> Бот сам напомнит клиенту о визите.</span></div>
-        </div>
-      </div>
-      <div class="chat" id="chat">
-        <div class="chat-top">
-          <div class="chat-av">Л</div>
-          <div><div class="nm">Барбершоп «Лезвие»</div><div class="st">бот онлайн</div></div>
-          <button class="btn btn-w btn-sm" id="chatReset" type="button">Заново</button>
-        </div>
-        <div class="chat-log" id="chatLog" aria-live="polite"></div>
-        <div class="chat-kb" id="chatKb"></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- PROCESS -->
-  <section class="band b-paper" id="process">
-    <div class="wrap">
-      <div class="head">
-        <span class="kicker">Без риска для вас</span>
-        <h2 class="h2">Как проходит работа</h2>
-      </div>
-      <div class="steps">
-        <div class="step"><span class="n">01</span><h3>Разбор задачи</h3><p>Вы пишете своими словами, что нужно. Я задаю вопросы и называю точную цену и срок.</p><span class="pay pay-0">Бесплатно</span></div>
-        <div class="step"><span class="n">02</span><h3>Макет первого экрана</h3><p>Показываю, как будет выглядеть главная часть. Не понравилось направление — расходимся.</p><span class="pay pay-0">Бесплатно</span></div>
-        <div class="step"><span class="n">03</span><h3>Разработка</h3><p>Делаю проект на тестовом адресе. Вы смотрите промежуточный результат и вносите правки.</p><span class="pay pay-50">50% на старте</span></div>
-        <div class="step"><span class="n">04</span><h3>Запуск и передача</h3><p>Публикую на вашем домене, передаю код, доступы и инструкцию.</p><span class="pay pay-50">50% после приёмки</span></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- WORKS -->
-  <section class="band b-ink" id="works">
-    <div class="wrap">
-      <div class="head">
-        <span class="kicker">Работы</span>
-        <h2 class="h2">Проекты</h2>
-        <p class="sub" style="color:#D6D6E0">Реальные сайт и автоматизация, которые уже работают.</p>
-      </div>
-      <div class="minis">
-        <a class="mini" href="projects/#shinline">
-          <div class="mini-media" aria-hidden="true">
-            <div class="phone"><img src="img/shinline-hero.jpg" alt="" loading="lazy" width="800" height="1283"></div>
-            <div class="phone"><img src="img/shinline-catalog.jpg" alt="" loading="lazy" width="800" height="1283"></div>
-          </div>
-          <div class="mini-body">
-            <span class="case-tag" style="align-self:flex-start">Интернет-магазин</span>
-            <h3>ШинЛайн</h3>
-            <p>Каталог шин с подбором по размеру, корзиной и онлайн-записью на шиномонтаж.</p>
-            <span class="mini-more">Смотреть кейс</span>
-          </div>
-        </a>
-        <a class="mini" href="projects/#reports">
-          <div class="mini-media mini-app" aria-hidden="true">
-            <div class="appshot"><img src="img/reports-app.jpg" alt="" loading="lazy" width="988" height="671"></div>
-          </div>
-          <div class="mini-body">
-            <span class="case-tag" style="align-self:flex-start;background:var(--yellow)">Автоматизация</span>
-            <h3>Отчёты по продажам</h3>
-            <div class="result" role="group" aria-label="Время на отчёты в месяц: было 2 дня, стало 15 минут">
-              <span class="was">2 дня</span><span class="arr" aria-hidden="true">→</span><span class="now">15 минут</span>
-            </div>
-            <span class="mini-more">Смотреть кейс</span>
-          </div>
-        </a>
-      </div>
-      <div class="all-projects"><a class="btn btn-y" href="projects/">Все проекты и демо</a></div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="band b-paper" id="faq">
+  <section class="sec" id="faq">
     <div class="wrap faq">
-      <div>
-        <span class="kicker">Вопросы</span>
-        <h2 class="h2">Частые вопросы</h2>
+      <div class="sec-head solo">
+        <h2 class="h2" data-split>Частые вопросы</h2>
       </div>
       <div class="qs">
-        <details open>
-          <summary>Вы выдаёте чек?</summary>
-          <p>Да. Я работаю как самозанятый (плательщик налога на профессиональный доход) и формирую чек в приложении МНС. Это подходит и для частных лиц, и для ИП и организаций.</p>
-        </details>
-        <details>
-          <summary>Что, если макет не понравится?</summary>
-          <p>Макет первого экрана я делаю бесплатно и до оплаты. Если направление не подошло, вы ничего не платите. После старта работ в цену входят 2 круга правок.</p>
-        </details>
-        <details>
-          <summary>Сколько стоят домен и хостинг?</summary>
-          <p>Их стоимость не входит в мою работу и зависит от провайдера. Я помогу выбрать подходящий тариф и оформлю домен на вас, чтобы сайт полностью принадлежал вам.</p>
-        </details>
-        <details>
-          <summary>Смогу ли я сам менять тексты и цены?</summary>
-          <p>Да. По желанию сделаю удобную панель управления или передам инструкцию, где и что поменять. Если не хочется разбираться, есть поддержка от 50 BYN в месяц.</p>
-        </details>
-        <details>
-          <summary>Вы работаете только в Минске?</summary>
-          <p>Нет, работаю удалённо по всей Беларуси. Всё обсуждаем в переписке или созвоне, результат передаю через интернет.</p>
-        </details>
+        <details open><summary>Вы выдаёте чек?<i aria-hidden="true"></i></summary><p>Да. Я работаю как самозанятый, плательщик налога на профессиональный доход, и формирую чек в приложении МНС. Подходит и для частных лиц, и для ИП и организаций.</p></details>
+        <details><summary>Что, если макет не понравится?<i aria-hidden="true"></i></summary><p>Макет первого экрана я делаю бесплатно и до оплаты. Если направление не подошло, вы ничего не платите. После старта работ в цену входят 2 круга правок.</p></details>
+        <details><summary>Сколько стоят домен и хостинг?<i aria-hidden="true"></i></summary><p>Их стоимость не входит в мою работу и зависит от провайдера. Помогу выбрать тариф и оформлю домен на вас, чтобы сайт полностью принадлежал вам.</p></details>
+        <details><summary>Смогу ли я сам менять тексты и цены?<i aria-hidden="true"></i></summary><p>Да. Могу сделать удобную панель управления или передать инструкцию, где и что поменять. Если не хочется разбираться, есть поддержка от 50 BYN в месяц.</p></details>
+        <details><summary>Вы работаете только в Минске?<i aria-hidden="true"></i></summary><p>Нет, удалённо по всей Беларуси. Всё обсуждаем в переписке или по видеосвязи, результат передаю через интернет.</p></details>
       </div>
     </div>
   </section>
-
-  <!-- CONTACT -->
-  <section class="band b-blue cta" id="contact">
+  <section class="sec pine contact" id="contact">
     <div class="wrap">
       <div>
-        <span class="status"><span class="dot"></span>Свободен для новых проектов</span>
-        <h2 class="h2">Напишите <span class="y">задачу</span>, назову цену</h2>
-        <p class="sub">Можно в двух словах: «нужен сайт для кофейни» или «хочу бота для записи». Если посчитали проект в калькуляторе, просто вставьте расчёт в сообщение.</p>
-      </div>
-      <div class="contacts">
-        <div class="contact">
-          <span class="ci"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 4 3 11l6 2 2 6 3-4 5 4z"/><path d="m9 13 8-6"/></svg></span>
-          <span class="tx"><small>Telegram</small><b id="tgHandle"></b></span>
-          <a class="btn btn-y btn-sm" id="tgLink" href="#" target="_blank" rel="noopener">Написать</a>
-        </div>
-        <div class="contact">
-          <span class="ci"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16l-1.5 12h-13z"/><path d="M9 7a3 3 0 0 1 6 0"/></svg></span>
-          <span class="tx"><small>Куфар</small><b>Объявление и отзывы</b></span>
-          <a class="btn btn-w btn-sm" id="kufarLink" href="https://www.kufar.by/item/1089806398" target="_blank" rel="noopener">Открыть</a>
+        <h2 data-split>Расскажите о задаче, а я назову цену и срок</h2>
+        <p class="lead" data-fade>Можно в двух словах: «нужен сайт для кофейни» или «хочу бота для записи». Если посчитали проект в калькуляторе, вставьте расчёт в сообщение.</p>
+        <div class="contact-links" data-fade>
+          <a class="link" href="https://t.me/hlebshypulia" target="_blank" rel="noopener">@hlebshypulia в Telegram</a>
+          <a class="link" href="https://www.kufar.by/item/1089806398" target="_blank" rel="noopener">Объявление на Куфаре</a>
         </div>
       </div>
+      <a class="orb" href="https://t.me/hlebshypulia" target="_blank" rel="noopener" data-magnetic="0.4"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 4 3 11l6 2 2 6 3-4 5 4z"/><path d="m9 13 8-6"/></svg>Написать в Telegram</a>
     </div>
   </section>
 </main>
 
-<footer>
+<footer class="foot">
   <div class="wrap">
     <span>© 2026 Шипуля Глеб Вячеславович, плательщик налога на профессиональный доход, УНП HE7440877. Беларусь</span>
-    <span>сайты, боты, автоматизация</span>
+    <span>Telegram <a href="https://t.me/hlebshypulia" target="_blank" rel="noopener">@hlebshypulia</a></span>
   </div>
 </footer>
-
-<script>
-/* ============ CONFIG: поменяйте здесь ============ */
-const CONFIG = {
-  telegram: 'hlebshypulia',              // ник без @
-  kufar: 'https://www.kufar.by/item/1089806398' // ссылка на ваше объявление
-};
-
-const PLATFORMS = [
-  {id:'landing', name:'Лендинг',          sub:'1 страница, до 6 блоков', price:290,  days:5,  kind:'site'},
-  {id:'card',    name:'Сайт-визитка',     sub:'до 4 страниц',            price:450,  days:7,  kind:'site'},
-  {id:'multi',   name:'Сайт для бизнеса', sub:'многостраничный',         price:700,  days:12, kind:'site'},
-  {id:'shop',    name:'Интернет-магазин', sub:'каталог и корзина',       price:1500, days:20, kind:'site'},
-  {id:'bot',     name:'Telegram-бот',     sub:'меню, FAQ, заявки',       price:150,  days:4,  kind:'bot'}
-];
-const INCLUDED = {
-  site:['Адаптив под телефон','Форма заявки в Telegram','Кнопки мессенджеров','Базовое SEO','Яндекс Метрика','Подключение домена','2 круга правок'],
-  bot:['Меню и кнопки','Ответы на частые вопросы','Заявки вам в личку','Запуск на сервере','2 круга правок']
-};
-const MODULES = [
-  {id:'texts',   name:'Тексты под ключ',          price:80,  days:2, for:['site']},
-  {id:'quiz',    name:'Квиз или калькулятор',      price:80,  days:2, for:['site']},
-  {id:'booking', name:'Онлайн-запись по слотам',   price:120, days:3, for:['site','bot']},
-  {id:'catalog', name:'Каталог с фильтрами',       price:150, days:3, for:['site'], not:['shop']},
-  {id:'lang',    name:'Вторая языковая версия',    price:150, days:3, for:['site']},
-  {id:'pay',     name:'Онлайн-оплата',             price:200, days:3, for:['site','bot']},
-  {id:'sheets',  name:'Заявки в Google Таблицу',   price:60,  days:1, for:['site','bot']},
-  {id:'crm',     name:'Интеграция с CRM',          price:150, days:3, for:['site','bot']},
-  {id:'admin',   name:'Админ-панель',              price:150, days:3, for:['bot']},
-  {id:'mailing', name:'Рассылки по базе клиентов', price:80,  days:2, for:['bot']},
-  {id:'ads',     name:'Запуск рекламы Яндекс/Google', price:200, days:3, for:['site']},
-  {id:'ai',      name:'ИИ-консультант*',           price:300, days:4, for:['site','bot']},
-  {id:'support', name:'Поддержка 3 месяца',        price:150, days:0, for:['site','bot']}
-];
-
-const fmt = n => n.toLocaleString('ru-RU').replace(/ /g,' ');
-const $ = id => document.getElementById(id);
-const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-
-/* ---------- calculator ---------- */
-let platform = 'landing';
-const picked = new Set(['texts','sheets']);
-function renderPlats(){
-  $('plats').innerHTML = PLATFORMS.map(p => `
-    <div class="opt">
-      <input type="radio" name="plat" id="plat-${p.id}" value="${p.id}" ${p.id===platform?'checked':''}>
-      <label for="plat-${p.id}"><span class="nm">${p.name}</span><span class="sub2">${p.sub}</span><span class="pr">от ${fmt(p.price)} BYN</span></label>
-    </div>`).join('');
-  $('plats').querySelectorAll('input').forEach(i => i.addEventListener('change', e => { platform = e.target.value; renderMods(); update(); }));
-}
-function available(){
-  const p = PLATFORMS.find(x => x.id===platform);
-  return MODULES.filter(m => m.for.includes(p.kind) && !(m.not||[]).includes(platform));
-}
-function renderMods(){
-  const av = available();
-  for (const id of [...picked]) if (!av.some(m => m.id===id)) picked.delete(id);
-  $('modsList').innerHTML = av.map(m => `
-    <div class="opt chk">
-      <input type="checkbox" id="mod-${m.id}" value="${m.id}" ${picked.has(m.id)?'checked':''}>
-      <label for="mod-${m.id}"><span class="box"><svg viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><span class="nm">${m.name}</span><span class="pr">+${fmt(m.price)}</span></label>
-    </div>`).join('');
-  $('modsList').querySelectorAll('input').forEach(i => i.addEventListener('change', e => {
-    e.target.checked ? picked.add(e.target.value) : picked.delete(e.target.value); update();
-  }));
-  const kind = PLATFORMS.find(x => x.id===platform).kind;
-  $('included').innerHTML = INCLUDED[kind].map(t => `<span>${t}</span>`).join('');
-}
-function totals(){
-  const p = PLATFORMS.find(x => x.id===platform);
-  const mods = MODULES.filter(m => picked.has(m.id));
-  const sum = p.price + mods.reduce((a,m) => a+m.price, 0);
-  const days = p.days + Math.ceil(mods.reduce((a,m) => a+m.days, 0) * 0.7);
-  return {p, mods, sum, days};
-}
-function plural(n,a,b,c){ const m10=n%10, m100=n%100; return m10===1&&m100!==11?a:(m10>=2&&m10<=4&&(m100<12||m100>14)?b:c); }
-function update(){
-  const {p, mods, sum, days} = totals();
-  $('estSum').innerHTML = `<small>от</small>${fmt(sum)}<em>BYN</em>`;
-  $('estDays').textContent = `≈ ${days} ${plural(days,'рабочий день','рабочих дня','рабочих дней')}`;
-  $('estList').innerHTML = [`<li><span>${p.name}</span><span>${fmt(p.price)}</span></li>`]
-    .concat(mods.map(m => `<li><span>${m.name}</span><span>+${fmt(m.price)}</span></li>`)).join('')
-    + (picked.has('ai') ? `<li><span style="color:#B9B9C8;font-size:13px">* оплата ИИ-сервиса отдельно, по его тарифу</span><span></span></li>` : '');
-  $('copied').textContent = '';
-}
-$('copyCalc').addEventListener('click', () => {
-  const {p, mods, sum, days} = totals();
-  const text = `Здравствуйте! Посчитал проект на вашем сайте:\n• ${p.name} — от ${p.price} BYN\n`
-    + mods.map(m => `• ${m.name.replace('*','')} — +${m.price} BYN`).join('\n')
-    + (mods.length ? '\n' : '') + `Итого: от ${sum} BYN, срок ≈ ${days} раб. дн.\nМоя задача: `;
-  const ok = () => { $('copied').textContent = 'Расчёт скопирован, вставьте его в сообщение'; };
-  if (navigator.clipboard && navigator.clipboard.writeText) {
-    navigator.clipboard.writeText(text).then(ok).catch(() => fallbackCopy(text, ok));
-  } else fallbackCopy(text, ok);
-});
-function fallbackCopy(text, ok){
-  const ta = document.createElement('textarea');
-  ta.value = text; ta.setAttribute('readonly',''); ta.style.position='fixed'; ta.style.opacity='0';
-  document.body.appendChild(ta); ta.select();
-  let done = false; try { done = document.execCommand('copy'); } catch(e){}
-  ta.remove();
-  if (done) ok(); else $('copied').textContent = 'Не получилось скопировать. Перечислите выбранное в сообщении';
-}
-renderPlats(); renderMods(); update();
-
-/* ---------- contacts ---------- */
-$('tgHandle').textContent = '@' + CONFIG.telegram;
-$('tgLink').href = 'https://t.me/' + CONFIG.telegram;
-$('kufarLink').href = CONFIG.kufar;
-
-/* ---------- deploy log ---------- */
-const LOG = [
-  {c:'cmd', k:'$', t:'deploy --project zerno-cafe'},
-  {k:'›', t:'сборка страниц', v:'ok'},
-  {k:'›', t:'адаптив 375 · 768 · 1440 px', v:'ok'},
-  {k:'›', t:'скорость загрузки', v:'0.9 s'},
-  {k:'›', t:'форма заявки → Telegram', v:'подключено'},
-  {k:'›', t:'Яндекс Метрика', v:'подключена'},
-  {k:'›', t:'SSL-сертификат', v:'выдан'},
-  {k:'›', t:'домен клиента', v:'привязан'},
-  {c:'done', k:'✓', t:'сайт опубликован, доступы переданы'}
-];
-const lineHTML = (l, anim) => `<div class="term-line ${l.c||''} ${anim?'in':''}"><span class="k">${l.k}</span><span>${l.t}</span>${l.v?`<span class="v">${l.v}</span>`:''}</div>`;
-const CARET = '<div class="term-line"><span class="k">$</span><span class="caret"></span></div>';
-function renderLogStatic(){ $('termBody').innerHTML = LOG.map(l => lineHTML(l,false)).join('') + CARET; }
-let running = false;
-function runLog(){
-  if (running) return;
-  if (reduce){ renderLogStatic(); return; }
-  running = true; $('termBody').innerHTML = '';
-  LOG.forEach((l,i) => setTimeout(() => {
-    $('termBody').insertAdjacentHTML('beforeend', lineHTML(l,true));
-    if (i === LOG.length-1){ $('termBody').insertAdjacentHTML('beforeend', CARET); running = false; }
-  }, i * 300));
-}
-renderLogStatic();
-$('runDeploy').addEventListener('click', runLog);
-
-
-</script>
-<script src="/js/bot-demo.js?v=6" defer></script>
-<script src="/js/site.js?v=6" defer></script>
+<script src="/js/calc.js?v=8" defer></script>
+<script src="/js/site.js?v=8" defer></script>
 </body>
 </html>
