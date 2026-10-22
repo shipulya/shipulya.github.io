@@ -427,7 +427,13 @@ body.menu-open{overflow:hidden}
 .cur-ring.label{width:96px;height:96px;margin:-48px 0 0 -48px;background:var(--accent);border-color:var(--accent);mix-blend-mode:normal}
 .cur-ring.label span{opacity:1}
 .cur-ring.hide{opacity:0}
-@media (prefers-reduced-motion:reduce){.cur-ring{display:none}}
+.cur{position:fixed;left:0;top:0;z-index:101;pointer-events:none;width:8px;height:8px;margin:-4px 0 0 -4px;border-radius:50%;background:#fff;mix-blend-mode:difference;transition:opacity .2s}
+.cur.hide{opacity:0}
+/* the system cursor is hidden only after the custom one has appeared */
+@media (hover:hover) and (pointer:fine){
+  .has-cursor,.has-cursor a,.has-cursor button,.has-cursor label,.has-cursor summary{cursor:none}
+}
+
 
 /* ---------- motion ---------- */
 .js [data-split] .w{display:inline-block;overflow:hidden;vertical-align:top;padding-bottom:.08em;margin-bottom:-.08em}

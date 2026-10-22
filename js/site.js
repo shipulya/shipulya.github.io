@@ -79,14 +79,16 @@
     });
   }
 
-  if (!finePointer) return;
+  if (!finePointer || reduce) return;
 
-  /* ---------- cursor follower ----------
-     The real system cursor always stays visible; a ring trails behind it,
-     grows over links and turns into a label over project screenshots. */
+  /* ---------- custom cursor ----------
+     A dot sits exactly on the pointer, a ring trails behind it, grows over links
+     and turns into a label over project screenshots. Both re-check what is under
+     the pointer after scrolls and clicks, and hide when the pointer leaves the window. */
+  var dot = document.createElement('div'); dot.className = 'cur hide';
   var ring = document.createElement('div'); ring.className = 'cur-ring hide'; ring.innerHTML = '<span></span>';
   var ringLabel = ring.firstChild;
-  document.body.appendChild(ring);
+  document.body.appendChild(dot); document.body.appendChild(ring);
   var mx = -100, my = -100, rx = -100, ry = -100, seen = false, recheck = false, curLabel = '';
   var HOVER = 'a, button, summary, label, [data-cursor]';
 
@@ -99,16 +101,18 @@
     ring.classList.toggle('label', !!lab);
     if (text !== curLabel) { ringLabel.textContent = text; curLabel = text; }
     ring.classList.toggle('hide', !seen || !!field);
+    dot.classList.toggle('hide', !seen || !!field || !!lab);
   }
   document.addEventListener('mousemove', function (e) {
     mx = e.clientX; my = e.clientY;
     if (!seen) { rx = mx; ry = my; }
+    doc.classList.add('has-cursor');
     seen = true;
     setState(e.target);
   }, { passive: true });
   /* pointer left the window or the tab lost focus: hide until the mouse moves again */
-  document.addEventListener('mouseout', function (e) { if (!e.relatedTarget) { seen = false; ring.classList.add('hide'); } });
-  window.addEventListener('blur', function () { seen = false; ring.classList.add('hide'); });
+  document.addEventListener('mouseout', function (e) { if (!e.relatedTarget) { seen = false; ring.classList.add('hide'); dot.classList.add('hide'); doc.classList.remove('has-cursor'); } });
+  window.addEventListener('blur', function () { seen = false; ring.classList.add('hide'); dot.classList.add('hide'); doc.classList.remove('has-cursor'); });
   /* content moved under a still mouse (scroll, menus opening): look again on the next frame */
   window.addEventListener('scroll', function () { recheck = true; }, { passive: true });
   document.addEventListener('click', function () { recheck = true; });
@@ -149,6 +153,7 @@
 
   (function loop() {
     if (recheck && seen) { recheck = false; setState(document.elementFromPoint(mx, my)); }
+    dot.style.transform = 'translate3d(' + mx + 'px,' + my + 'px,0)';
     rx = lerp(rx, mx, reduce ? 1 : 0.2); ry = lerp(ry, my, reduce ? 1 : 0.2);
     ring.style.transform = 'translate3d(' + rx + 'px,' + ry + 'px,0)';
 
