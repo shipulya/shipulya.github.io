@@ -421,19 +421,13 @@ body.menu-open{overflow:hidden}
 @media (max-width:760px){.which{grid-template-columns:minmax(0,1fr)}}
 
 /* ---------- cursor ---------- */
-.cur,.cur-ring{position:fixed;left:0;top:0;z-index:100;pointer-events:none;border-radius:50%;opacity:0;transition:opacity .3s}
-.has-cursor .cur,.has-cursor .cur-ring{opacity:1}
-.cur{width:8px;height:8px;margin:-4px 0 0 -4px;background:#fff;mix-blend-mode:difference}
-.cur-ring{width:40px;height:40px;margin:-20px 0 0 -20px;border:1px solid #fff;mix-blend-mode:difference;display:grid;place-items:center;transition:opacity .3s,width .45s var(--ease),height .45s var(--ease),margin .45s var(--ease),background-color .3s,border-color .3s}
+.cur-ring{position:fixed;left:0;top:0;z-index:100;pointer-events:none;border-radius:50%;width:36px;height:36px;margin:-18px 0 0 -18px;border:1px solid #fff;mix-blend-mode:difference;display:grid;place-items:center;opacity:1;transition:opacity .25s,width .4s var(--ease),height .4s var(--ease),margin .4s var(--ease),background-color .25s,border-color .25s}
 .cur-ring span{font-size:14px;font-weight:500;color:var(--on-accent);opacity:0;transition:opacity .2s;white-space:nowrap}
-.cur-ring.hover{width:64px;height:64px;margin:-32px 0 0 -32px}
+.cur-ring.hover{width:56px;height:56px;margin:-28px 0 0 -28px}
 .cur-ring.label{width:96px;height:96px;margin:-48px 0 0 -48px;background:var(--accent);border-color:var(--accent);mix-blend-mode:normal}
 .cur-ring.label span{opacity:1}
-.has-cursor .cur.hide,.has-cursor .cur-ring.hide{opacity:0}
-.has-cursor .cur.label{opacity:0}
-@media (hover:hover) and (pointer:fine){
-  .has-cursor,.has-cursor a,.has-cursor button,.has-cursor label,.has-cursor summary{cursor:none}
-}
+.cur-ring.hide{opacity:0}
+@media (prefers-reduced-motion:reduce){.cur-ring{display:none}}
 
 /* ---------- motion ---------- */
 .js [data-split] .w{display:inline-block;overflow:hidden;vertical-align:top;padding-bottom:.08em;margin-bottom:-.08em}
